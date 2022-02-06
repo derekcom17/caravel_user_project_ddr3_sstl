@@ -1,0 +1,17 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1644036801
+use cfg_shift_register  cfg_shift_register_2 ~/proj/caravan-test/mag
+timestamp 1644036613
+transform 1 0 -11726 0 1 39
+box -50 -36 11802 604
+use cfg_shift_register  cfg_shift_register_1
+timestamp 1644036613
+transform 1 0 11826 0 1 39
+box -50 -36 11802 604
+use cfg_shift_register  cfg_shift_register_0
+timestamp 1644036613
+transform 1 0 50 0 1 39
+box -50 -36 11802 604
+<< end >>
