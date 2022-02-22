@@ -219,7 +219,7 @@ rect 7300 -36 7340 96
 rect 8772 -36 8812 96
 rect 10244 -36 10284 96
 rect 11716 -36 11756 96
-use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_7 ~/cad/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_7 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1643856600
 transform 1 0 10292 0 1 12
 box -38 -48 1510 592
