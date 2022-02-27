@@ -1,12 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1644908151
+timestamp 1645920707
 << checkpaint >>
 rect -1242 -1244 10278 24764
-rect 12190 13340 34566 36732
-rect 11454 10724 34566 13340
-rect 11454 10180 14142 10724
+rect 12190 10724 34566 36732
 << locali >>
 rect 22027 32313 23103 32425
 rect 22027 29049 23103 29161
@@ -1331,73 +1329,13 @@ rect 13672 4311 17967 11984
 rect 28789 4311 33084 11984
 rect 8796 16 33084 4311
 use SSTL  SSTL_0 ~/proj/caravan-project/mag/SSTL
-timestamp 1644865263
+timestamp 1645920216
 transform 1 0 2350 0 -1 4308
 box -2332 -19196 6668 4292
 use SSTL  SSTL_1
-timestamp 1644865263
+timestamp 1645920216
 transform -1 0 20118 0 -1 16276
 box -2332 -19196 6668 4292
-use SSTL  SSTL_2
-timestamp 1644865263
-transform 1 0 26638 0 -1 16276
-box -2332 -19196 6668 4292
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1644111581
-transform -1 0 23608 0 1 12576
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_1
-timestamp 1644111581
-transform -1 0 23608 0 -1 15840
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_2
-timestamp 1644111581
-transform -1 0 23608 0 -1 19104
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_3
-timestamp 1644111581
-transform -1 0 23608 0 1 15840
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_4
-timestamp 1644111581
-transform -1 0 23608 0 -1 22368
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_5
-timestamp 1644111581
-transform -1 0 23608 0 1 19104
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_6
-timestamp 1644111581
-transform -1 0 23608 0 -1 25632
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_7
-timestamp 1644111581
-transform -1 0 23608 0 1 22368
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_8
-timestamp 1644111581
-transform -1 0 23608 0 -1 28896
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_9
-timestamp 1644111581
-transform -1 0 23608 0 1 25632
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_10
-timestamp 1644111581
-transform -1 0 23608 0 -1 32160
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_11
-timestamp 1644111581
-transform -1 0 23608 0 1 28896
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_12
-timestamp 1644111581
-transform -1 0 23608 0 -1 35424
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_13
-timestamp 1644111581
-transform -1 0 23608 0 1 32160
-box -38 -48 498 592
 use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 9716 0 1 11488
@@ -1414,66 +1352,126 @@ use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 ~/proj/caravan-project/pd
 timestamp 1644111581
 transform 1 0 10452 0 1 11488
 box -38 -48 1970 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 12752 0 1 11488
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1644111581
-transform 1 0 23608 0 1 12576
-box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
-timestamp 1644111581
-transform 1 0 23608 0 -1 15840
-box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_3
-timestamp 1644111581
-transform 1 0 23608 0 -1 19104
-box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
 timestamp 1644111581
 transform 1 0 23608 0 1 15840
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_5
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
 timestamp 1644111581
-transform 1 0 23608 0 -1 22368
+transform 1 0 23608 0 -1 15840
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_6
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
+timestamp 1644111581
+transform 1 0 23608 0 1 12576
+box -38 -48 130 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_3 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1644111581
+transform -1 0 23608 0 1 15840
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_1
+timestamp 1644111581
+transform -1 0 23608 0 -1 15840
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0
+timestamp 1644111581
+transform -1 0 23608 0 1 12576
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_2
+timestamp 1644111581
+transform -1 0 23608 0 -1 19104
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_5
+timestamp 1644111581
+transform -1 0 23608 0 1 19104
+box -38 -48 498 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_3
+timestamp 1644111581
+transform 1 0 23608 0 -1 19104
+box -38 -48 130 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_6
 timestamp 1644111581
 transform 1 0 23608 0 1 19104
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_7
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_4
 timestamp 1644111581
-transform 1 0 23608 0 -1 25632
+transform -1 0 23608 0 -1 22368
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_7
+timestamp 1644111581
+transform -1 0 23608 0 1 22368
+box -38 -48 498 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_5
+timestamp 1644111581
+transform 1 0 23608 0 -1 22368
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_8
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_8
 timestamp 1644111581
 transform 1 0 23608 0 1 22368
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_9
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_6
 timestamp 1644111581
-transform 1 0 23608 0 -1 28896
+transform -1 0 23608 0 -1 25632
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_9
+timestamp 1644111581
+transform -1 0 23608 0 1 25632
+box -38 -48 498 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_7
+timestamp 1644111581
+transform 1 0 23608 0 -1 25632
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_10
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_10
 timestamp 1644111581
 transform 1 0 23608 0 1 25632
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_11
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_8
 timestamp 1644111581
-transform 1 0 23608 0 -1 32160
+transform -1 0 23608 0 -1 28896
+box -38 -48 498 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_9
+timestamp 1644111581
+transform 1 0 23608 0 -1 28896
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_12
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_11
+timestamp 1644111581
+transform -1 0 23608 0 1 28896
+box -38 -48 498 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_12
 timestamp 1644111581
 transform 1 0 23608 0 1 28896
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_13
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_10
 timestamp 1644111581
-transform 1 0 23608 0 -1 35424
+transform -1 0 23608 0 -1 32160
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_13
+timestamp 1644111581
+transform -1 0 23608 0 1 32160
+box -38 -48 498 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_11
+timestamp 1644111581
+transform 1 0 23608 0 -1 32160
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_14
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_14
 timestamp 1644111581
 transform 1 0 23608 0 1 32160
 box -38 -48 130 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_12
+timestamp 1644111581
+transform -1 0 23608 0 -1 35424
+box -38 -48 498 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_13
+timestamp 1644111581
+transform 1 0 23608 0 -1 35424
+box -38 -48 130 592
+use SSTL  SSTL_2
+timestamp 1645920216
+transform 1 0 26638 0 -1 16276
+box -2332 -19196 6668 4292
 << labels >>
 flabel metal2 -276 16 -217 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[0]
 port 8 n
