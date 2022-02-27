@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1645920707
+timestamp 1645986888
 << checkpaint >>
 rect -1242 -1244 10278 24764
 rect 12190 10724 34566 36732
@@ -1000,7 +1000,6 @@ rect 11523 317 11575 369
 rect 10809 231 10861 283
 rect 11411 230 11463 282
 << metal2 >>
-rect 16333 34122 16422 35472
 rect 23168 34908 23224 35472
 rect 22524 32848 22580 32855
 rect 444 23243 503 23249
@@ -1329,14 +1328,74 @@ rect 13672 4311 17967 11984
 rect 28789 4311 33084 11984
 rect 8796 16 33084 4311
 use SSTL  SSTL_0 ~/proj/caravan-project/mag/SSTL
-timestamp 1645920216
+timestamp 1645986192
 transform 1 0 2350 0 -1 4308
 box -2332 -19196 6668 4292
 use SSTL  SSTL_1
-timestamp 1645920216
+timestamp 1645986192
 transform -1 0 20118 0 -1 16276
 box -2332 -19196 6668 4292
-use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use SSTL  SSTL_2
+timestamp 1645986192
+transform 1 0 26638 0 -1 16276
+box -2332 -19196 6668 4292
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1644111581
+transform -1 0 23608 0 1 12576
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_1
+timestamp 1644111581
+transform -1 0 23608 0 -1 15840
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_2
+timestamp 1644111581
+transform -1 0 23608 0 -1 19104
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_3
+timestamp 1644111581
+transform -1 0 23608 0 1 15840
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_4
+timestamp 1644111581
+transform -1 0 23608 0 -1 22368
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_5
+timestamp 1644111581
+transform -1 0 23608 0 1 19104
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_6
+timestamp 1644111581
+transform -1 0 23608 0 -1 25632
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_7
+timestamp 1644111581
+transform -1 0 23608 0 1 22368
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_8
+timestamp 1644111581
+transform -1 0 23608 0 -1 28896
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_9
+timestamp 1644111581
+transform -1 0 23608 0 1 25632
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_10
+timestamp 1644111581
+transform -1 0 23608 0 -1 32160
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_11
+timestamp 1644111581
+transform -1 0 23608 0 1 28896
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_12
+timestamp 1644111581
+transform -1 0 23608 0 -1 35424
+box -38 -48 498 592
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_13
+timestamp 1644111581
+transform -1 0 23608 0 1 32160
+box -38 -48 498 592
+use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 9716 0 1 11488
 box -38 -48 406 592
@@ -1344,217 +1403,157 @@ use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_1
 timestamp 1644111581
 transform 1 0 10084 0 1 11488
 box -38 -48 406 592
-use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 12384 0 1 11488
 box -38 -48 406 592
-use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 10452 0 1 11488
 box -38 -48 1970 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 12752 0 1 11488
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
-timestamp 1644111581
-transform 1 0 23608 0 1 15840
-box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
-timestamp 1644111581
-transform 1 0 23608 0 -1 15840
-box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
 timestamp 1644111581
 transform 1 0 23608 0 1 12576
 box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_3 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
 timestamp 1644111581
-transform -1 0 23608 0 1 15840
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_1
-timestamp 1644111581
-transform -1 0 23608 0 -1 15840
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0
-timestamp 1644111581
-transform -1 0 23608 0 1 12576
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_2
-timestamp 1644111581
-transform -1 0 23608 0 -1 19104
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_5
-timestamp 1644111581
-transform -1 0 23608 0 1 19104
-box -38 -48 498 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_3
+transform 1 0 23608 0 -1 15840
+box -38 -48 130 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_3
 timestamp 1644111581
 transform 1 0 23608 0 -1 19104
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_6
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
 timestamp 1644111581
-transform 1 0 23608 0 1 19104
+transform 1 0 23608 0 1 15840
 box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_4
-timestamp 1644111581
-transform -1 0 23608 0 -1 22368
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_7
-timestamp 1644111581
-transform -1 0 23608 0 1 22368
-box -38 -48 498 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_5
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_5
 timestamp 1644111581
 transform 1 0 23608 0 -1 22368
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_8
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_6
 timestamp 1644111581
-transform 1 0 23608 0 1 22368
+transform 1 0 23608 0 1 19104
 box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_6
-timestamp 1644111581
-transform -1 0 23608 0 -1 25632
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_9
-timestamp 1644111581
-transform -1 0 23608 0 1 25632
-box -38 -48 498 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_7
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_7
 timestamp 1644111581
 transform 1 0 23608 0 -1 25632
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_10
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_8
 timestamp 1644111581
-transform 1 0 23608 0 1 25632
+transform 1 0 23608 0 1 22368
 box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_8
-timestamp 1644111581
-transform -1 0 23608 0 -1 28896
-box -38 -48 498 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_9
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_9
 timestamp 1644111581
 transform 1 0 23608 0 -1 28896
 box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_11
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_10
 timestamp 1644111581
-transform -1 0 23608 0 1 28896
-box -38 -48 498 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_12
-timestamp 1644111581
-transform 1 0 23608 0 1 28896
+transform 1 0 23608 0 1 25632
 box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_10
-timestamp 1644111581
-transform -1 0 23608 0 -1 32160
-box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_13
-timestamp 1644111581
-transform -1 0 23608 0 1 32160
-box -38 -48 498 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_11
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_11
 timestamp 1644111581
 transform 1 0 23608 0 -1 32160
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_14
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_12
 timestamp 1644111581
-transform 1 0 23608 0 1 32160
+transform 1 0 23608 0 1 28896
 box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_12
-timestamp 1644111581
-transform -1 0 23608 0 -1 35424
-box -38 -48 498 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1#1  sky130_fd_sc_hd__tapvpwrvgnd_1_13
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_13
 timestamp 1644111581
 transform 1 0 23608 0 -1 35424
 box -38 -48 130 592
-use SSTL  SSTL_2
-timestamp 1645920216
-transform 1 0 26638 0 -1 16276
-box -2332 -19196 6668 4292
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_14
+timestamp 1644111581
+transform 1 0 23608 0 1 32160
+box -38 -48 130 592
 << labels >>
 flabel metal2 -276 16 -217 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[0]
-port 8 n
-flabel metal2 -156 16 -97 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[1]
-port 9 n
-flabel metal2 -36 16 23 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[2]
-port 10 n
-flabel metal2 84 16 143 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[3]
 port 11 n
-flabel metal2 204 16 263 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[4]
+flabel metal2 -156 16 -97 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[1]
 port 12 n
-flabel metal2 324 16 383 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[5]
+flabel metal2 -36 16 23 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[2]
 port 13 n
-flabel metal2 444 16 503 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[6]
+flabel metal2 84 16 143 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[3]
 port 14 n
-flabel metal2 2600 16 2658 112 1 FreeSerif 112 45 0 0 rx_pu_cal[0]
+flabel metal2 204 16 263 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[4]
 port 15 n
-flabel metal2 2876 16 2934 112 1 FreeSerif 112 45 0 0 rx_pu_cal[1]
+flabel metal2 324 16 383 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[5]
 port 16 n
-flabel metal2 3151 16 3209 112 1 FreeSerif 112 45 0 0 rx_pu_cal[2]
+flabel metal2 444 16 503 112 1 FreeSerif 112 45 0 0 rx_leg_ctrl[6]
 port 17 n
-flabel metal2 3426 16 3484 112 1 FreeSerif 112 45 0 0 rx_pu_cal[3]
-port 18 n
-flabel metal2 3983 16 4041 112 1 FreeSerif 112 45 0 0 rx_pd_cal[0]
-port 19 n
-flabel metal2 4103 16 4161 112 1 FreeSerif 112 45 0 0 rx_pd_cal[1]
-port 20 n
-flabel metal2 4223 16 4281 112 1 FreeSerif 112 45 0 0 rx_pd_cal[2]
-port 21 n
-flabel metal2 4343 16 4401 112 1 FreeSerif 112 45 0 0 rx_pd_cal[3]
+flabel metal2 2600 16 2658 112 1 FreeSerif 112 45 0 0 rx_pu_cal[0]
 port 22 n
-flabel metal2 6046 22576 6142 23504 1 FreeSerif 1600 0 0 0 rx_DQ
-port 38 n
-flabel metal2 30334 34175 30423 35472 1 FreeSerif 1600 0 0 0 tx_DQ
-port 39 n
-flabel metal2 16333 34122 16422 35472 1 FreeSerif 1600 0 0 0 n_tx_DQ
-port 40 n
-flabel metal2 s 11105 16 11165 108 1 FreeSerif 112 0 0 0 d_sel_0
-port 1 n
-flabel metal2 s 11663 16 11723 108 1 FreeSerif 112 0 0 0 d_sel_1
-port 2 n
-flabel metal2 s 10626 16 10700 108 1 FreeSerif 112 0 0 0 data_0
-port 5 n
-flabel metal2 s 10741 16 10773 108 1 FreeSerif 112 0 0 0 data_2
-port 6 n
-flabel metal2 s 10811 16 10860 108 1 FreeSerif 112 0 0 0 data_3
-port 7 n
-flabel metal2 s 18067 16 18125 108 1 FreeSerif 112 45 0 0 tx_pd_cal[3]
+flabel metal2 2876 16 2934 112 1 FreeSerif 112 45 0 0 rx_pu_cal[1]
 port 23 n
-flabel metal2 s 18187 16 18245 108 1 FreeSerif 112 45 0 0 tx_pd_cal[2]
+flabel metal2 3151 16 3209 112 1 FreeSerif 112 45 0 0 rx_pu_cal[2]
 port 24 n
-flabel metal2 s 18307 16 18365 108 1 FreeSerif 112 45 0 0 tx_pd_cal[1]
+flabel metal2 3426 16 3484 112 1 FreeSerif 112 45 0 0 rx_pu_cal[3]
 port 25 n
-flabel metal2 s 18427 16 18485 108 1 FreeSerif 112 45 0 0 tx_pd_cal[0]
-port 26 n
-flabel metal2 s 18984 16 19042 108 1 FreeSerif 112 45 0 0 tx_pu_cal[3]
-port 27 n
-flabel metal2 s 19259 16 19317 108 1 FreeSerif 112 45 0 0 tx_pu_cal[2]
-port 28 n
-flabel metal2 s 19534 16 19592 108 1 FreeSerif 112 45 0 0 tx_pu_cal[1]
-port 29 n
-flabel metal2 s 19810 16 19868 108 1 FreeSerif 112 45 0 0 tx_pu_cal[0]
-port 30 n
-flabel metal2 s 22524 16 22580 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[0]
-port 31 n
-flabel metal2 s 22616 16 22672 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[1]
-port 32 n
-flabel metal2 s 22708 16 22764 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[2]
-port 33 n
-flabel metal2 s 22800 16 22856 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[3]
-port 34 n
-flabel metal2 s 22892 16 22948 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[4]
-port 35 n
-flabel metal2 s 22984 16 23040 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[5]
-port 36 n
-flabel metal2 s 23076 16 23132 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[6]
-port 37 n
-flabel metal4 56 35872 28639 40167 1 FreeSerif 4800 0 0 0 IO_VDD
-port 41 n
-flabel metal4 28789 16 33084 11984 1 FreeSerif 4800 0 0 0 IO_GND
-port 42 n
-flabel metal2 s 11890 16 11946 108 1 FreeSerif 112 0 0 0 dig_VDD
+flabel metal2 3983 16 4041 112 1 FreeSerif 112 45 0 0 rx_pd_cal[0]
+port 18 n
+flabel metal2 4103 16 4161 112 1 FreeSerif 112 45 0 0 rx_pd_cal[1]
+port 19 n
+flabel metal2 4223 16 4281 112 1 FreeSerif 112 45 0 0 rx_pd_cal[2]
+port 20 n
+flabel metal2 4343 16 4401 112 1 FreeSerif 112 45 0 0 rx_pd_cal[3]
+port 21 n
+flabel metal2 s 11105 16 11165 108 1 FreeSerif 112 0 0 0 d_sel_0
+port 0 n
+flabel metal2 s 11663 16 11723 108 1 FreeSerif 112 0 0 0 d_sel_1
+port 1 n
+flabel metal2 s 10626 16 10700 108 1 FreeSerif 112 0 0 0 data_0
+port 2 n
+flabel metal2 s 10741 16 10773 108 1 FreeSerif 112 0 0 0 data_2
 port 3 n
-flabel metal2 s 12057 16 12113 108 1 FreeSerif 112 0 0 0 dig_GND
+flabel metal2 s 10811 16 10860 108 1 FreeSerif 112 0 0 0 data_3
 port 4 n
+flabel metal2 s 18067 16 18125 108 1 FreeSerif 112 45 0 0 tx_pd_cal[3]
+port 37 n
+flabel metal2 s 18187 16 18245 108 1 FreeSerif 112 45 0 0 tx_pd_cal[2]
+port 36 n
+flabel metal2 s 18307 16 18365 108 1 FreeSerif 112 45 0 0 tx_pd_cal[1]
+port 35 n
+flabel metal2 s 18427 16 18485 108 1 FreeSerif 112 45 0 0 tx_pd_cal[0]
+port 34 n
+flabel metal2 s 18984 16 19042 108 1 FreeSerif 112 45 0 0 tx_pu_cal[3]
+port 41 n
+flabel metal2 s 19259 16 19317 108 1 FreeSerif 112 45 0 0 tx_pu_cal[2]
+port 40 n
+flabel metal2 s 19534 16 19592 108 1 FreeSerif 112 45 0 0 tx_pu_cal[1]
+port 39 n
+flabel metal2 s 19810 16 19868 108 1 FreeSerif 112 45 0 0 tx_pu_cal[0]
+port 38 n
+flabel metal2 s 22524 16 22580 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[0]
+port 27 n
+flabel metal2 s 22616 16 22672 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[1]
+port 28 n
+flabel metal2 s 22708 16 22764 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[2]
+port 29 n
+flabel metal2 s 22800 16 22856 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[3]
+port 30 n
+flabel metal2 s 22892 16 22948 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[4]
+port 31 n
+flabel metal2 s 22984 16 23040 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[5]
+port 32 n
+flabel metal2 s 23076 16 23132 108 1 FreeSerif 112 45 0 0 tx_leg_ctrl[6]
+port 33 n
+flabel metal4 56 35872 28639 40167 1 FreeSerif 4800 0 0 0 IO_VDD
+port 8 n
+flabel metal4 28789 16 33084 11984 1 FreeSerif 4800 0 0 0 IO_GND
+port 7 n
+flabel metal2 s 11890 16 11946 108 1 FreeSerif 112 0 0 0 dig_VDD
+port 6 n
+flabel metal2 s 12057 16 12113 108 1 FreeSerif 112 0 0 0 dig_GND
+port 5 n
+flabel space 5774 16 6433 23504 1 FreeSerif 3200 0 0 0 rx_DQ
+port 10 n
+flabel space 16035 11984 16694 35472 1 FreeSerif 3200 0 0 0 n_tx_DQ
+port 9 n
+flabel space 30062 11984 30721 35472 1 FreeSerif 3200 0 0 0 tx_DQ
+port 26 n
 << end >>
