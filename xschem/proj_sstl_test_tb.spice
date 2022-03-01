@@ -1,0 +1,279 @@
+**.subckt proj_sstl_test_tb
+X1 rx_leg_ctrl[6] rx_leg_ctrl[5] rx_leg_ctrl[4] rx_leg_ctrl[3] rx_leg_ctrl[2] rx_leg_ctrl[1]
++ rx_leg_ctrl[0] rx_pu_cal[3] rx_pu_cal[2] rx_pu_cal[1] rx_pu_cal[0] rx_pd_cal[3] rx_pd_cal[2] rx_pd_cal[1]
++ rx_pd_cal[0] tx_leg_ctrl[6] tx_leg_ctrl[5] tx_leg_ctrl[4] tx_leg_ctrl[3] tx_leg_ctrl[2] tx_leg_ctrl[1]
++ tx_leg_ctrl[0] tx_pu_cal[3] tx_pu_cal[2] tx_pu_cal[1] tx_pu_cal[0] tx_pd_cal[3] tx_pd_cal[2] tx_pd_cal[1]
++ tx_pd_cal[0] data_0 data_2 data_3 d_sel_0 d_sel_1 rx_DQ tx_DQ n_tx_DQ VDD IOVDD GND proj_sstl_test
+C1 rx_DQ GND 1p m=1
+R1 rx_DQ data_in 10 m=1
+**** begin user architecture code
+ ** Local library links to pdk
+.lib ./sky130/libs/tt_lib.spice tt
+.include /home/derekhm/cad/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /home/derekhm/proj/caravan-project/xschem/proj_sstl_test.sym # of pins=14
+* sym_path: /home/derekhm/proj/caravan-project/xschem/proj_sstl_test.sym
+* sch_path: /home/derekhm/proj/caravan-project/xschem/proj_sstl_test.sch
+.subckt proj_sstl_test  rx_leg_ctrl[6] rx_leg_ctrl[5] rx_leg_ctrl[4] rx_leg_ctrl[3] rx_leg_ctrl[2]
++ rx_leg_ctrl[1] rx_leg_ctrl[0]  rx_pu_cal[3] rx_pu_cal[2] rx_pu_cal[1] rx_pu_cal[0]  rx_pd_cal[3] rx_pd_cal[2]
++ rx_pd_cal[1] rx_pd_cal[0]  tx_leg_ctrl[6] tx_leg_ctrl[5] tx_leg_ctrl[4] tx_leg_ctrl[3] tx_leg_ctrl[2]
++ tx_leg_ctrl[1] tx_leg_ctrl[0]  tx_pu_cal[3] tx_pu_cal[2] tx_pu_cal[1] tx_pu_cal[0]  tx_pd_cal[3] tx_pd_cal[2]
++ tx_pd_cal[1] tx_pd_cal[0]  data_0  data_2  data_3  d_sel_0  d_sel_1  rx_DQ  tx_DQ  n_tx_DQ  VDD  IOVDD  GND
+*.iopin rx_DQ
+*.ipin rx_pu_cal[3],rx_pu_cal[2],rx_pu_cal[1],rx_pu_cal[0]
+*.ipin rx_pd_cal[3],rx_pd_cal[2],rx_pd_cal[1],rx_pd_cal[0]
+*.ipin
+*+ rx_leg_ctrl[6],rx_leg_ctrl[5],rx_leg_ctrl[4],rx_leg_ctrl[3],rx_leg_ctrl[2],rx_leg_ctrl[1],rx_leg_ctrl[0]
+*.ipin data_0
+*.ipin data_2
+*.ipin data_3
+*.ipin d_sel_0
+*.ipin d_sel_1
+*.iopin tx_DQ
+*.iopin n_tx_DQ
+*.ipin tx_pu_cal[3],tx_pu_cal[2],tx_pu_cal[1],tx_pu_cal[0]
+*.ipin tx_pd_cal[3],tx_pd_cal[2],tx_pd_cal[1],tx_pd_cal[0]
+*.ipin
+*+ tx_leg_ctrl[6],tx_leg_ctrl[5],tx_leg_ctrl[4],tx_leg_ctrl[3],tx_leg_ctrl[2],tx_leg_ctrl[1],tx_leg_ctrl[0]
+X1 rx_DQ rx_leg_ctrl[6] rx_leg_ctrl[5] rx_leg_ctrl[4] rx_leg_ctrl[3] rx_leg_ctrl[2] rx_leg_ctrl[1]
++ rx_leg_ctrl[0] rx_leg_ctrl[6] rx_leg_ctrl[5] rx_leg_ctrl[4] rx_leg_ctrl[3] rx_leg_ctrl[2] rx_leg_ctrl[1]
++ rx_leg_ctrl[0] rx_pd_cal[3] rx_pd_cal[2] rx_pd_cal[1] rx_pd_cal[0] rx_pu_cal[3] rx_pu_cal[2] rx_pu_cal[1]
++ rx_pu_cal[0] IOVDD GND SSTL
+X2 tx_DQ net3[6] net3[5] net3[4] net3[3] net3[2] net3[1] net3[0] net4[6] net4[5] net4[4] net4[3]
++ net4[2] net4[1] net4[0] tx_pd_cal[3] tx_pd_cal[2] tx_pd_cal[1] tx_pd_cal[0] tx_pu_cal[3] tx_pu_cal[2]
++ tx_pu_cal[1] tx_pu_cal[0] IOVDD GND SSTL
+X3 n_tx_DQ net4[6] net4[5] net4[4] net4[3] net4[2] net4[1] net4[0] net3[6] net3[5] net3[4] net3[3]
++ net3[2] net3[1] net3[0] tx_pd_cal[3] tx_pd_cal[2] tx_pd_cal[1] tx_pd_cal[0] tx_pu_cal[3] tx_pu_cal[2]
++ tx_pu_cal[1] tx_pu_cal[0] IOVDD GND SSTL
+x1 rx_DQ GND GND VDD VDD net1 sky130_fd_sc_hd__clkbuf_2
+x2 net1 GND GND VDD VDD net2 sky130_fd_sc_hd__clkbuf_2
+x3 data_0 net2 data_2 data_3 d_sel_0 d_sel_1 GND GND VDD VDD d_out sky130_fd_sc_hd__mux4_1
+x4 d_out GND GND VDD VDD net5 sky130_fd_sc_hd__clkinv_2
+xn_and[6] d_out tx_leg_ctrl[6] GND GND VDD VDD net3[6] sky130_fd_sc_hd__and2_1
+xn_and[5] d_out tx_leg_ctrl[5] GND GND VDD VDD net3[5] sky130_fd_sc_hd__and2_1
+xn_and[4] d_out tx_leg_ctrl[4] GND GND VDD VDD net3[4] sky130_fd_sc_hd__and2_1
+xn_and[3] d_out tx_leg_ctrl[3] GND GND VDD VDD net3[3] sky130_fd_sc_hd__and2_1
+xn_and[2] d_out tx_leg_ctrl[2] GND GND VDD VDD net3[2] sky130_fd_sc_hd__and2_1
+xn_and[1] d_out tx_leg_ctrl[1] GND GND VDD VDD net3[1] sky130_fd_sc_hd__and2_1
+xn_and[0] d_out tx_leg_ctrl[0] GND GND VDD VDD net3[0] sky130_fd_sc_hd__and2_1
+xand[6] net5 tx_leg_ctrl[6] GND GND VDD VDD net4[6] sky130_fd_sc_hd__and2_1
+xand[5] net5 tx_leg_ctrl[5] GND GND VDD VDD net4[5] sky130_fd_sc_hd__and2_1
+xand[4] net5 tx_leg_ctrl[4] GND GND VDD VDD net4[4] sky130_fd_sc_hd__and2_1
+xand[3] net5 tx_leg_ctrl[3] GND GND VDD VDD net4[3] sky130_fd_sc_hd__and2_1
+xand[2] net5 tx_leg_ctrl[2] GND GND VDD VDD net4[2] sky130_fd_sc_hd__and2_1
+xand[1] net5 tx_leg_ctrl[1] GND GND VDD VDD net4[1] sky130_fd_sc_hd__and2_1
+xand[0] net5 tx_leg_ctrl[0] GND GND VDD VDD net4[0] sky130_fd_sc_hd__and2_1
+.ends
+
+
+* expanding   symbol:  /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sym # of pins=5
+* sym_path: /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sym
+* sch_path: /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sch
+.subckt SSTL  DQ  pd_ctrl[6] pd_ctrl[5] pd_ctrl[4] pd_ctrl[3] pd_ctrl[2] pd_ctrl[1] pd_ctrl[0]
++  pu_ctrl[6] pu_ctrl[5] pu_ctrl[4] pu_ctrl[3] pu_ctrl[2] pu_ctrl[1] pu_ctrl[0]  pd_cal_ctrl[3] pd_cal_ctrl[2]
++ pd_cal_ctrl[1] pd_cal_ctrl[0]  pu_cal_ctrl[3] pu_cal_ctrl[2] pu_cal_ctrl[1] pu_cal_ctrl[0]  VDD  GND
+*.iopin DQ
+*.ipin pu_cal_ctrl[3],pu_cal_ctrl[2],pu_cal_ctrl[1],pu_cal_ctrl[0]
+*.ipin pd_cal_ctrl[3],pd_cal_ctrl[2],pd_cal_ctrl[1],pd_cal_ctrl[0]
+*.ipin pu_ctrl[6],pu_ctrl[5],pu_ctrl[4],pu_ctrl[3],pu_ctrl[2],pu_ctrl[1],pu_ctrl[0]
+*.ipin pd_ctrl[6],pd_ctrl[5],pd_ctrl[4],pd_ctrl[3],pd_ctrl[2],pd_ctrl[1],pd_ctrl[0]
+X1 DQ n_pu_ctrl[6] n_pu_cal_ctrl[3] n_pu_cal_ctrl[2] n_pu_cal_ctrl[1] n_pu_cal_ctrl[0] p-leg
+X2 DQ pd_ctrl_buff[6] pd_cal_ctrl[3] pd_cal_ctrl[2] pd_cal_ctrl[1] pd_cal_ctrl[0] n-leg
+X3 DQ n_pu_ctrl[5] n_pu_cal_ctrl[3] n_pu_cal_ctrl[2] n_pu_cal_ctrl[1] n_pu_cal_ctrl[0] p-leg
+X4 DQ pd_ctrl_buff[5] pd_cal_ctrl[3] pd_cal_ctrl[2] pd_cal_ctrl[1] pd_cal_ctrl[0] n-leg
+X5 DQ n_pu_ctrl[4] n_pu_cal_ctrl[3] n_pu_cal_ctrl[2] n_pu_cal_ctrl[1] n_pu_cal_ctrl[0] p-leg
+X6 DQ pd_ctrl_buff[4] pd_cal_ctrl[3] pd_cal_ctrl[2] pd_cal_ctrl[1] pd_cal_ctrl[0] n-leg
+X7 DQ n_pu_ctrl[3] n_pu_cal_ctrl[3] n_pu_cal_ctrl[2] n_pu_cal_ctrl[1] n_pu_cal_ctrl[0] p-leg
+X8 DQ pd_ctrl_buff[3] pd_cal_ctrl[3] pd_cal_ctrl[2] pd_cal_ctrl[1] pd_cal_ctrl[0] n-leg
+X9 DQ n_pu_ctrl[2] n_pu_cal_ctrl[3] n_pu_cal_ctrl[2] n_pu_cal_ctrl[1] n_pu_cal_ctrl[0] p-leg
+X10 DQ pd_ctrl_buff[2] pd_cal_ctrl[3] pd_cal_ctrl[2] pd_cal_ctrl[1] pd_cal_ctrl[0] n-leg
+X11 DQ n_pu_ctrl[1] n_pu_cal_ctrl[3] n_pu_cal_ctrl[2] n_pu_cal_ctrl[1] n_pu_cal_ctrl[0] p-leg
+X12 DQ pd_ctrl_buff[1] pd_cal_ctrl[3] pd_cal_ctrl[2] pd_cal_ctrl[1] pd_cal_ctrl[0] n-leg
+X13 DQ n_pu_ctrl[0] n_pu_cal_ctrl[3] n_pu_cal_ctrl[2] n_pu_cal_ctrl[1] n_pu_cal_ctrl[0] p-leg
+X14 DQ pd_ctrl_buff[0] pd_cal_ctrl[3] pd_cal_ctrl[2] pd_cal_ctrl[1] pd_cal_ctrl[0] n-leg
+xpd_buff_4[6] pdc2[6] GND GND VDD VDD pdc4[6] sky130_fd_sc_hd__clkinv_4
+xpd_buff_4[5] pdc2[5] GND GND VDD VDD pdc4[5] sky130_fd_sc_hd__clkinv_4
+xpd_buff_4[4] pdc2[4] GND GND VDD VDD pdc4[4] sky130_fd_sc_hd__clkinv_4
+xpd_buff_4[3] pdc2[3] GND GND VDD VDD pdc4[3] sky130_fd_sc_hd__clkinv_4
+xpd_buff_4[2] pdc2[2] GND GND VDD VDD pdc4[2] sky130_fd_sc_hd__clkinv_4
+xpd_buff_4[1] pdc2[1] GND GND VDD VDD pdc4[1] sky130_fd_sc_hd__clkinv_4
+xpd_buff_4[0] pdc2[0] GND GND VDD VDD pdc4[0] sky130_fd_sc_hd__clkinv_4
+xpd_buff_6[6] pdc4[6] GND GND VDD VDD pd_ctrl_buff[6] sky130_fd_sc_hd__clkbuf_8
+xpd_buff_6[5] pdc4[5] GND GND VDD VDD pd_ctrl_buff[5] sky130_fd_sc_hd__clkbuf_8
+xpd_buff_6[4] pdc4[4] GND GND VDD VDD pd_ctrl_buff[4] sky130_fd_sc_hd__clkbuf_8
+xpd_buff_6[3] pdc4[3] GND GND VDD VDD pd_ctrl_buff[3] sky130_fd_sc_hd__clkbuf_8
+xpd_buff_6[2] pdc4[2] GND GND VDD VDD pd_ctrl_buff[2] sky130_fd_sc_hd__clkbuf_8
+xpd_buff_6[1] pdc4[1] GND GND VDD VDD pd_ctrl_buff[1] sky130_fd_sc_hd__clkbuf_8
+xpd_buff_6[0] pdc4[0] GND GND VDD VDD pd_ctrl_buff[0] sky130_fd_sc_hd__clkbuf_8
+xpu_buff_4[6] pu_ctrl[6] GND GND VDD VDD puc4[6] sky130_fd_sc_hd__clkbuf_16
+xpu_buff_4[5] pu_ctrl[5] GND GND VDD VDD puc4[5] sky130_fd_sc_hd__clkbuf_16
+xpu_buff_4[4] pu_ctrl[4] GND GND VDD VDD puc4[4] sky130_fd_sc_hd__clkbuf_16
+xpu_buff_4[3] pu_ctrl[3] GND GND VDD VDD puc4[3] sky130_fd_sc_hd__clkbuf_16
+xpu_buff_4[2] pu_ctrl[2] GND GND VDD VDD puc4[2] sky130_fd_sc_hd__clkbuf_16
+xpu_buff_4[1] pu_ctrl[1] GND GND VDD VDD puc4[1] sky130_fd_sc_hd__clkbuf_16
+xpu_buff_4[0] pu_ctrl[0] GND GND VDD VDD puc4[0] sky130_fd_sc_hd__clkbuf_16
+xpu_buff_6[6] puc4[6] GND GND VDD VDD n_pu_ctrl[6] sky130_fd_sc_hd__clkinv_16
+xpu_buff_6[5] puc4[5] GND GND VDD VDD n_pu_ctrl[5] sky130_fd_sc_hd__clkinv_16
+xpu_buff_6[4] puc4[4] GND GND VDD VDD n_pu_ctrl[4] sky130_fd_sc_hd__clkinv_16
+xpu_buff_6[3] puc4[3] GND GND VDD VDD n_pu_ctrl[3] sky130_fd_sc_hd__clkinv_16
+xpu_buff_6[2] puc4[2] GND GND VDD VDD n_pu_ctrl[2] sky130_fd_sc_hd__clkinv_16
+xpu_buff_6[1] puc4[1] GND GND VDD VDD n_pu_ctrl[1] sky130_fd_sc_hd__clkinv_16
+xpu_buff_6[0] puc4[0] GND GND VDD VDD n_pu_ctrl[0] sky130_fd_sc_hd__clkinv_16
+xpu_cal_inv[3] pu_cal_ctrl[3] GND GND VDD VDD n_pu_cal_ctrl[3] sky130_fd_sc_hd__inv_1
+xpu_cal_inv[2] pu_cal_ctrl[2] GND GND VDD VDD n_pu_cal_ctrl[2] sky130_fd_sc_hd__inv_1
+xpu_cal_inv[1] pu_cal_ctrl[1] GND GND VDD VDD n_pu_cal_ctrl[1] sky130_fd_sc_hd__inv_1
+xpu_cal_inv[0] pu_cal_ctrl[0] GND GND VDD VDD n_pu_cal_ctrl[0] sky130_fd_sc_hd__inv_1
+xpu_buff_2[6] puc4[6] GND GND VDD VDD n_pu_ctrl[6] sky130_fd_sc_hd__clkinv_16
+xpu_buff_2[5] puc4[5] GND GND VDD VDD n_pu_ctrl[5] sky130_fd_sc_hd__clkinv_16
+xpu_buff_2[4] puc4[4] GND GND VDD VDD n_pu_ctrl[4] sky130_fd_sc_hd__clkinv_16
+xpu_buff_2[3] puc4[3] GND GND VDD VDD n_pu_ctrl[3] sky130_fd_sc_hd__clkinv_16
+xpu_buff_2[2] puc4[2] GND GND VDD VDD n_pu_ctrl[2] sky130_fd_sc_hd__clkinv_16
+xpu_buff_2[1] puc4[1] GND GND VDD VDD n_pu_ctrl[1] sky130_fd_sc_hd__clkinv_16
+xpu_buff_2[0] puc4[0] GND GND VDD VDD n_pu_ctrl[0] sky130_fd_sc_hd__clkinv_16
+xpd_buff_1[6] pd_ctrl[6] GND GND VDD VDD pdc2[6] sky130_fd_sc_hd__clkinv_4
+xpd_buff_1[5] pd_ctrl[5] GND GND VDD VDD pdc2[5] sky130_fd_sc_hd__clkinv_4
+xpd_buff_1[4] pd_ctrl[4] GND GND VDD VDD pdc2[4] sky130_fd_sc_hd__clkinv_4
+xpd_buff_1[3] pd_ctrl[3] GND GND VDD VDD pdc2[3] sky130_fd_sc_hd__clkinv_4
+xpd_buff_1[2] pd_ctrl[2] GND GND VDD VDD pdc2[2] sky130_fd_sc_hd__clkinv_4
+xpd_buff_1[1] pd_ctrl[1] GND GND VDD VDD pdc2[1] sky130_fd_sc_hd__clkinv_4
+xpd_buff_1[0] pd_ctrl[0] GND GND VDD VDD pdc2[0] sky130_fd_sc_hd__clkinv_4
+xpu_buff_1[6] puc4[6] GND GND VDD VDD n_pu_ctrl[6] sky130_fd_sc_hd__clkinv_16
+xpu_buff_1[5] puc4[5] GND GND VDD VDD n_pu_ctrl[5] sky130_fd_sc_hd__clkinv_16
+xpu_buff_1[4] puc4[4] GND GND VDD VDD n_pu_ctrl[4] sky130_fd_sc_hd__clkinv_16
+xpu_buff_1[3] puc4[3] GND GND VDD VDD n_pu_ctrl[3] sky130_fd_sc_hd__clkinv_16
+xpu_buff_1[2] puc4[2] GND GND VDD VDD n_pu_ctrl[2] sky130_fd_sc_hd__clkinv_16
+xpu_buff_1[1] puc4[1] GND GND VDD VDD n_pu_ctrl[1] sky130_fd_sc_hd__clkinv_16
+xpu_buff_1[0] puc4[0] GND GND VDD VDD n_pu_ctrl[0] sky130_fd_sc_hd__clkinv_16
+.ends
+
+
+* expanding   symbol:  p-leg.sym # of pins=3
+* sym_path: /home/derekhm/proj/caravan-project/xschem/SSTL/p-leg.sym
+* sch_path: /home/derekhm/proj/caravan-project/xschem/SSTL/p-leg.sch
+.subckt p-leg  DQ  n_pu_ctrl  n_cal_ctrl[3] n_cal_ctrl[2] n_cal_ctrl[1] n_cal_ctrl[0]
+*.ipin n_cal_ctrl[3],n_cal_ctrl[2],n_cal_ctrl[1],n_cal_ctrl[0]
+*.ipin n_pu_ctrl
+*.iopin DQ
+R1 DQ net1 sky130_fd_pr__res_generic_po W=0.33 L=1.8 m=1
+XMpullup net1 n_pu_ctrl VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=96 m=96
+XMctrl0 DQ n_cal_ctrl[0] net1 VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=48 m=48
+XMctrl1 DQ n_cal_ctrl[1] net1 VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=24 m=24
+XMctrl2 DQ n_cal_ctrl[2] net1 VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=12 m=12
+XMctrl3 DQ n_cal_ctrl[3] net1 VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=6 m=6
+.ends
+
+
+* expanding   symbol:  n-leg.sym # of pins=3
+* sym_path: /home/derekhm/proj/caravan-project/xschem/SSTL/n-leg.sym
+* sch_path: /home/derekhm/proj/caravan-project/xschem/SSTL/n-leg.sch
+.subckt n-leg  DQ  pd_ctrl  cal_ctrl[3] cal_ctrl[2] cal_ctrl[1] cal_ctrl[0]
+*.iopin DQ
+*.ipin pd_ctrl
+*.ipin cal_ctrl[3],cal_ctrl[2],cal_ctrl[1],cal_ctrl[0]
+R1 vpulldown DQ sky130_fd_pr__res_generic_po W=0.33 L=1.7 m=1
+Xn1 vpulldown pd_ctrl GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=48 m=48
+Xnctrl0 DQ cal_ctrl[0] vpulldown GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=32 m=32
+Xnctrl1 DQ cal_ctrl[1] vpulldown GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=8 m=8
+Xnctrl2 DQ cal_ctrl[2] vpulldown GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
+Xnctrl3 DQ cal_ctrl[3] vpulldown GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+**** begin user architecture code
+
+
+* power voltage
+vvdd VDD 0 1.5
+
+** STATIC CONTOL
+vrx_leg_ctrl[0] rx_leg_ctrl[0] VDD 0
+vrx_leg_ctrl[1] rx_leg_ctrl[1] VDD 0
+vrx_leg_ctrl[2] rx_leg_ctrl[2] VDD 0
+vrx_leg_ctrl[3] rx_leg_ctrl[3]  0  0
+vrx_leg_ctrl[4] rx_leg_ctrl[4]  0  0
+vrx_leg_ctrl[5] rx_leg_ctrl[5]  0  0
+vrx_leg_ctrl[6] rx_leg_ctrl[6]  0  0
+
+vtx_leg_ctrl[0] tx_leg_ctrl[0] VDD 0
+vtx_leg_ctrl[1] tx_leg_ctrl[1] VDD 0
+vtx_leg_ctrl[2] tx_leg_ctrl[2] VDD 0
+vtx_leg_ctrl[3] tx_leg_ctrl[3] VDD 0
+vtx_leg_ctrl[4] tx_leg_ctrl[4] VDD 0
+vtx_leg_ctrl[5] tx_leg_ctrl[5] VDD 0
+vtx_leg_ctrl[6] tx_leg_ctrl[6] VDD 0
+
+vtx_pu_cal[3] tx_pu_cal[3]  0  0
+vtx_pu_cal[2] tx_pu_cal[2] VDD 0
+vtx_pu_cal[1] tx_pu_cal[1] VDD 0
+vtx_pu_cal[0] tx_pu_cal[0] VDD 0
+
+vtx_pd_cal[3] tx_pd_cal[3]  0  0
+vtx_pd_cal[2] tx_pd_cal[2] VDD 0
+vtx_pd_cal[1] tx_pd_cal[1] VDD 0
+vtx_pd_cal[0] tx_pd_cal[0] VDD 0
+
+vrx_pu_cal[3] rx_pu_cal[3]  0  0
+vrx_pu_cal[2] rx_pu_cal[2] VDD 0
+vrx_pu_cal[1] rx_pu_cal[1] VDD 0
+vrx_pu_cal[0] rx_pu_cal[0] VDD 0
+
+vrx_pd_cal[3] rx_pd_cal[3]  0  0
+vrx_pd_cal[2] rx_pd_cal[2] VDD 0
+vrx_pd_cal[1] rx_pd_cal[1] VDD 0
+vrx_pd_cal[0] rx_pd_cal[0] VDD 0
+
+vd0 data_0  0  0
+vd2 data_2 VDD 0
+vd3 data_3  0  0
+
+vs1 d_sel_1  0  0
+vs0 d_sel_0 VDD 0
+
+
+** Signal
+*                                vlow, vhigh, delay, risetime, falltime, pulsewidth, period, phase
+* vpu_ctrl0 pu_ctrl[0] 0 0 PULSE 0   SED_puctrl0_SED 1n 10p 10p 5n 10n 0
+vsig data_in 0 0 PULSE 0 1.5 1n 10p 10p 5n 10n 0
+
+
+.control
+save all
+set temp=27
+
+* RUN SIMULATION
+tran 1p 8n
+
+* OUTPUT
+set hcopydevtype = svg
+hardcopy ./sstl_test_proj.svg   rx_DQ tx_DQ n_tx_DQ title 'SSTL Test Circuit'
+hardcopy ./sstl_test_proj_2.svg rx_DQ x1.d_out       title 'SSTL Test Circuit'
+
+.endc
+
+
+**** end user architecture code
+.end
