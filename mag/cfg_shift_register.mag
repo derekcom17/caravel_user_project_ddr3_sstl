@@ -1,8 +1,41 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1645999795
+timestamp 1646187848
+<< nwell >>
+rect -50 518 118 839
+<< pwell >>
+rect -9 -183 77 -26
+<< psubdiff >>
+rect 17 -99 51 -52
+rect 17 -157 51 -133
+<< nsubdiff >>
+rect 17 771 51 795
+rect 17 678 51 737
+rect 17 620 51 644
+<< psubdiffcont >>
+rect 17 -133 51 -99
+<< nsubdiffcont >>
+rect 17 737 51 771
+rect 17 644 51 678
+<< locali >>
+rect 5 771 63 806
+rect 5 737 17 771
+rect 51 737 63 771
+rect 5 678 63 737
+rect 5 644 17 678
+rect 51 644 63 678
+rect 5 573 63 644
+rect -12 539 17 573
+rect 51 539 80 573
+rect -12 -5 17 29
+rect 51 -5 80 29
+rect 5 -99 63 -5
+rect 5 -133 17 -99
+rect 51 -133 63 -99
+rect 5 -150 63 -133
 << viali >>
+rect 17 539 51 573
 rect 19 228 53 262
 rect 1491 228 1525 262
 rect 2963 228 2997 262
@@ -27,7 +60,12 @@ rect 7258 101 7299 142
 rect 8730 101 8771 142
 rect 10202 101 10243 142
 rect 11674 101 11715 142
+rect 17 -5 51 29
 << metal1 >>
+rect -12 573 80 604
+rect -12 539 17 573
+rect 51 539 80 573
+rect -12 508 80 539
 rect 7 267 65 268
 rect 1479 267 1537 268
 rect 2951 267 3009 268
@@ -155,6 +193,10 @@ rect 7252 89 7305 90
 rect 8724 89 8777 90
 rect 10196 89 10249 90
 rect 11668 89 11721 90
+rect -12 29 80 60
+rect -12 -5 17 29
+rect 51 -5 80 29
+rect -12 -36 80 -5
 << via1 >>
 rect -66 96 -14 148
 rect 1406 142 1458 148
@@ -258,4 +300,29 @@ use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_7
 timestamp 1644111581
 transform 1 0 10292 0 1 12
 box -38 -48 1510 592
+<< labels >>
+flabel metal2 s -60 -36 -20 604 1 FreeSerif 480 0 0 0 d_in
+port 1 n
+flabel metal2 s 1412 -36 1452 604 1 FreeSerif 480 0 0 0 q[0]
+port 3 n
+flabel metal2 s 2884 -36 2924 604 1 FreeSerif 480 0 0 0 q[1]
+port 4 n
+flabel metal2 s 4356 -36 4396 604 1 FreeSerif 480 180 0 0 q[2]
+port 5 n
+flabel metal2 s 5828 -36 5868 604 1 FreeSerif 480 180 0 0 q[3]
+port 6 n
+flabel metal2 s 7300 -36 7340 604 1 FreeSerif 480 180 0 0 q[4]
+port 7 n
+flabel metal2 s 8772 -36 8812 604 1 FreeSerif 480 180 0 0 q[5]
+port 8 n
+flabel metal2 s 10244 -36 10284 604 1 FreeSerif 480 180 0 0 q[6]
+port 9 n
+flabel metal2 s 11716 -36 11756 604 1 FreeSerif 480 180 0 0 q[7]
+port 10 n
+flabel metal1 s 10357 223 11802 267 1 FreeSerif 480 0 0 0 clk
+port 0 n
+flabel metal1 s -12 508 80 604 1 FreeSerif 320 0 0 0 VDD
+port 11 n
+flabel metal1 s -12 -36 80 60 1 FreeSerif 320 0 0 0 GND
+port 2 n
 << end >>
