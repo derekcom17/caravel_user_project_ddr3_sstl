@@ -1,0 +1,17 @@
+* time, d_clk d_d_in
+0n      0s 1s  
+1n      1s 1s
+2n      0s 0s
+3n      1s 0s
+4n      0s 1s
+5n      1s 1s
+6n      0s 0s
+7n      1s 0s
+8n      0s 1s
+9n      1s 1s
+10n     0s 0s
+11n     1s 0s
+12n     0s 1s
+13n     1s 1s
+14n     0s 0s
+15n     1s 0s

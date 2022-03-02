@@ -1,0 +1,64 @@
+**.subckt cfg_shift_register_tb
+x3 net2 net1 q[7] q[6] q[5] q[4] q[3] q[2] q[1] q[0] VDD GND cfg_shift_register
+A1 [ d_d_in ] [ net1 ] dac_1v5
+A2 [ d_clk ] [ net2 ] dac_1v5
+**** begin user architecture code
+
+.model dac_1v5 dac_bridge(out_low=0.0 out_high=1.5   out_undef=0.75 input_load=1e-12 t_rise=100e-12
++ t_fall=100e-12)
+
+ ** Local library links to pdk
+.lib sky130/libs/tt_lib.spice tt
+.include /home/derekhm/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  xschem/cfg_shift_register.sym # of pins=3
+* sym_path: /home/derekhm/proj/caravan-project/xschem/cfg_shift_register.sym
+* sch_path: /home/derekhm/proj/caravan-project/xschem/cfg_shift_register.sch
+.subckt cfg_shift_register  clk  d_in  q[7] q[6] q[5] q[4] q[3] q[2] q[1] q[0]  VDD  GND
+*.ipin clk
+*.ipin d_in
+*.opin q[7],q[6],q[5],q[4],q[3],q[2],q[1],q[0]
+x1 clk d_in GND GND VDD VDD q[0] sky130_fd_sc_hd__dfxtp_1
+x2 clk q[0] GND GND VDD VDD q[1] sky130_fd_sc_hd__dfxtp_1
+x3 clk q[1] GND GND VDD VDD q[2] sky130_fd_sc_hd__dfxtp_1
+x4 clk q[2] GND GND VDD VDD q[3] sky130_fd_sc_hd__dfxtp_1
+x5 clk q[3] GND GND VDD VDD q[4] sky130_fd_sc_hd__dfxtp_1
+x6 clk q[4] GND GND VDD VDD q[5] sky130_fd_sc_hd__dfxtp_1
+x7 clk q[5] GND GND VDD VDD q[6] sky130_fd_sc_hd__dfxtp_1
+x8 clk q[6] GND GND VDD VDD q[7] sky130_fd_sc_hd__dfxtp_1
+.ends
+
+**** begin user architecture code
+
+
+* power voltage
+vvdd VDD 0 1.5
+
+** STATIC CONTOL
+
+
+** Signal
+a_source [d_clk d_d_in] d_source1
+.model d_source1 d_source(input_file="cfg_sreg_din.txt")
+
+
+.control
+save all
+set temp=27
+
+* RUN SIMULATION
+tran 1n 20n
+
+* OUTPUT
+set hcopydevtype = svg
+hardcopy ./sreg_tb.svg  net1-2 net2-2 "q[0]" "q[1]"+2 "q[2]"+4 "q[3]"+6 "q[4]"+8 "q[5]"+10 "q[6]"+12
++ "q[7]"+14 title 'SSTL Test Circuit'
+
+.endc
+
+
+**** end user architecture code
+.end

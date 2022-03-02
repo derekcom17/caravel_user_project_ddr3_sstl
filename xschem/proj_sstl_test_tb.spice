@@ -9,12 +9,12 @@ R1 rx_DQ data_in 10 m=1
 **** begin user architecture code
  ** Local library links to pdk
 .lib ./sky130/libs/tt_lib.spice tt
-.include /home/derekhm/cad/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /home/derekhm/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 **** end user architecture code
 **.ends
 
-* expanding   symbol:  /home/derekhm/proj/caravan-project/xschem/proj_sstl_test.sym # of pins=14
+* expanding   symbol:  xschem/proj_sstl_test.sym # of pins=14
 * sym_path: /home/derekhm/proj/caravan-project/xschem/proj_sstl_test.sym
 * sch_path: /home/derekhm/proj/caravan-project/xschem/proj_sstl_test.sch
 .subckt proj_sstl_test  rx_leg_ctrl[6] rx_leg_ctrl[5] rx_leg_ctrl[4] rx_leg_ctrl[3] rx_leg_ctrl[2]
@@ -69,7 +69,7 @@ xand[0] net5 tx_leg_ctrl[0] GND GND VDD VDD net4[0] sky130_fd_sc_hd__and2_1
 .ends
 
 
-* expanding   symbol:  /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sym # of pins=5
+* expanding   symbol:  xschem/SSTL/SSTL.sym # of pins=5
 * sym_path: /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sym
 * sch_path: /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sch
 .subckt SSTL  DQ  pd_ctrl[6] pd_ctrl[5] pd_ctrl[4] pd_ctrl[3] pd_ctrl[2] pd_ctrl[1] pd_ctrl[0]

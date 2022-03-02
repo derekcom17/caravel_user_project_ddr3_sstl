@@ -1,0 +1,24 @@
+v {xschem version=3.0.0 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @@clk @@d_in @@q[7:0] @VDD @GND @symname"
+template="name=X1 VDD=VDD GND=GND"
+extra="VDD GND"}
+V {}
+S {}
+E {}
+L 4 560 -160 600 -160 {}
+L 4 60 -160 100 -160 {}
+L 4 60 -100 100 -100 {}
+B 5 57.5 -102.5 62.5 -97.5 {name=clk
+dir=in}
+B 5 57.5 -162.5 62.5 -157.5 {name=d_in
+dir=in}
+B 5 597.5 -162.5 602.5 -157.5 {name=q[7:0]
+dir=out}
+P 4 5 100 -200 560 -200 560 -80 100 -80 100 -200 {}
+T {CONFIG SREG} 180 -150 0 0 0.8 0.8 {}
+T {@name} 290 -220 0 0 0.3 0.3 {}
+T {clk} 100 -110 0 0 0.3 0.3 {}
+T {d_in} 100 -170 0 0 0.3 0.3 {}
+T {q[7:0]} 510 -170 0 0 0.3 0.3 {}
