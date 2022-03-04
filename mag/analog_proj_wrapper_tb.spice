@@ -146,7 +146,7 @@ save all
 set temp=27
 
 * RUN SIMULATION
-tran 10p 350n
+tran 10p 200n
 
 * OUTPUT
 set hcopydevtype = svg
