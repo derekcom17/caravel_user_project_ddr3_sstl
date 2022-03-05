@@ -1,8 +1,8 @@
 * time, d_clk d_d_in
 2n      0s 1s  
 4n      1s 1s
-6n     0s 1s
-8n     1s 1s
+6n      0s 1s
+8n      1s 1s
 10n     0s 1s
 12n     1s 1s
 14n     0s 1s
@@ -16,8 +16,8 @@
 30n     0s 1s
 32n     1s 1s
 
-34n      0s 1s  
-36n      1s 1s
+34n     0s 1s  
+36n     1s 1s
 38n     0s 1s
 40n     1s 1s
 42n     0s 0s
@@ -30,8 +30,8 @@
 56n     1s 1s
 58n     0s 0s
 60n     1s 0s
-62n     0s 0s
-64n     1s 0s
+62n      0s 0s
+64n      1s 0s
 
 66n      0s 1s  
 68n      1s 1s
@@ -51,7 +51,7 @@
 96n     1s 1s
 
 98n      0s 1s  
-100n      1s 1s
+100n     1s 1s
 102n     0s 0s
 104n     1s 0s
 106n     0s 0s
