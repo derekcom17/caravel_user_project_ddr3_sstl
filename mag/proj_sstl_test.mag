@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1646210680
+timestamp 1646594466
 << locali >>
 rect 22027 32313 23103 32425
 rect 22027 29049 23103 29161
@@ -632,8 +632,9 @@ rect 10620 11805 10626 11811
 rect 10700 11805 10706 11811
 rect 9981 11746 10067 11752
 rect 6024 11617 6030 11724
-rect 6137 11703 9894 11724
-rect 6137 11637 9807 11703
+rect 6137 11617 8304 11724
+rect 9609 11703 9894 11724
+rect 9609 11637 9807 11703
 rect 9873 11637 9894 11703
 rect 9981 11678 9993 11746
 rect 10061 11740 10246 11746
@@ -662,7 +663,7 @@ rect 12447 11695 12516 11701
 rect 10061 11678 10246 11684
 rect 9981 11677 10067 11678
 rect 9987 11672 10067 11677
-rect 6137 11617 9894 11637
+rect 9609 11617 9894 11637
 rect 12459 11667 12504 11695
 rect 23528 11670 23534 11674
 rect 12544 11667 23534 11670
@@ -756,6 +757,8 @@ rect 11405 230 11411 232
 rect 11463 230 11469 282
 rect -424 16 78 112
 rect 8949 108 8980 112
+<< rmetal1 >>
+rect 8304 11617 9609 11724
 << via1 >>
 rect 23177 35376 23303 35472
 rect 23637 35376 23763 35472
@@ -1828,7 +1831,7 @@ use SSTL  SSTL_1
 timestamp 1646210680
 transform -1 0 20118 0 -1 16276
 box -2332 -19196 6668 4292
-use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 9716 0 1 11488
 box -38 -48 406 592
@@ -1836,42 +1839,42 @@ use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_1
 timestamp 1644111581
 transform 1 0 10084 0 1 11488
 box -38 -48 406 592
-use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 12384 0 1 11488
 box -38 -48 406 592
-use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 10452 0 1 11488
 box -38 -48 1970 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
 transform 1 0 12752 0 1 11488
 box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1644111581
-transform 1 0 23608 0 1 15840
-box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
-timestamp 1644111581
-transform 1 0 23608 0 -1 15840
-box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1644111581
-transform 1 0 23608 0 1 12576
-box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1644111581
-transform -1 0 23608 0 1 15840
+transform -1 0 23608 0 1 12576
 box -38 -48 498 592
 use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_1
 timestamp 1644111581
 transform -1 0 23608 0 -1 15840
 box -38 -48 498 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_3
 timestamp 1644111581
-transform -1 0 23608 0 1 12576
+transform -1 0 23608 0 1 15840
 box -38 -48 498 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
+timestamp 1644111581
+transform 1 0 23608 0 1 12576
+box -38 -48 130 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
+timestamp 1644111581
+transform 1 0 23608 0 -1 15840
+box -38 -48 130 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
+timestamp 1644111581
+transform 1 0 23608 0 1 15840
+box -38 -48 130 592
 use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_2
 timestamp 1644111581
 transform -1 0 23608 0 -1 19104
