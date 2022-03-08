@@ -1823,7 +1823,7 @@ rect 23929 9914 23930 10339
 rect 23503 9913 23930 9914
 rect 28789 4311 33084 11984
 rect 8796 16 33084 4311
-use SSTL  SSTL_0 ~/proj/caravan-project/mag/SSTL
+use SSTL  SSTL_0 ./SSTL
 timestamp 1646210680
 transform 1 0 2350 0 -1 4308
 box -2332 -19196 6668 4292
@@ -1831,7 +1831,7 @@ use SSTL  SSTL_1
 timestamp 1646210680
 transform -1 0 20118 0 -1 16276
 box -2332 -19196 6668 4292
-use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 
 timestamp 1644111581
 transform 1 0 9716 0 1 11488
 box -38 -48 406 592
@@ -1839,19 +1839,19 @@ use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_1
 timestamp 1644111581
 transform 1 0 10084 0 1 11488
 box -38 -48 406 592
-use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 
 timestamp 1644111581
 transform 1 0 12384 0 1 11488
 box -38 -48 406 592
-use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 
 timestamp 1644111581
 transform 1 0 10452 0 1 11488
 box -38 -48 1970 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 
 timestamp 1644111581
 transform 1 0 12752 0 1 11488
 box -38 -48 130 592
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0 
 timestamp 1644111581
 transform -1 0 23608 0 1 12576
 box -38 -48 498 592
