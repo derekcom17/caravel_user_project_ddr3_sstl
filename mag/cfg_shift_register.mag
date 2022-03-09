@@ -1,23 +1,37 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1646187848
+timestamp 1646794523
 << nwell >>
 rect -50 518 118 839
+rect 5819 594 6350 646
+rect 9819 594 10350 646
 << pwell >>
 rect -9 -183 77 -26
 << psubdiff >>
+rect 5905 -39 5939 -5
+rect 5997 -39 6031 -5
+rect 9905 -39 9939 -5
+rect 9997 -39 10031 -5
 rect 17 -99 51 -52
 rect 17 -157 51 -133
 << nsubdiff >>
 rect 17 771 51 795
 rect 17 678 51 737
 rect 17 620 51 644
+rect 5905 573 5939 607
+rect 5997 573 6031 607
+rect 9905 573 9939 607
+rect 9997 573 10031 607
 << psubdiffcont >>
+rect 5939 -39 5997 -5
+rect 9939 -39 9997 -5
 rect 17 -133 51 -99
 << nsubdiffcont >>
 rect 17 737 51 771
 rect 17 644 51 678
+rect 5939 573 5997 607
+rect 9939 573 9997 607
 << locali >>
 rect 5 771 63 806
 rect 5 737 17 771
@@ -26,11 +40,19 @@ rect 5 678 63 737
 rect 5 644 17 678
 rect 51 644 63 678
 rect 5 573 63 644
+rect 5923 573 5939 607
+rect 5997 573 6013 607
+rect 9923 573 9939 607
+rect 9997 573 10013 607
 rect -12 539 17 573
 rect 51 539 80 573
 rect -12 -5 17 29
 rect 51 -5 80 29
 rect 5 -99 63 -5
+rect 5923 -39 5939 -5
+rect 5997 -39 6013 -5
+rect 9923 -39 9939 -5
+rect 9997 -39 10013 -5
 rect 5 -133 17 -99
 rect 51 -133 63 -99
 rect 5 -150 63 -133
@@ -268,36 +290,36 @@ rect 7300 -36 7340 96
 rect 8772 -36 8812 96
 rect 10244 -36 10284 96
 rect 11716 -36 11756 96
-use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1644111581
+use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1646794523
 transform 1 0 -12 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_1
-timestamp 1644111581
+timestamp 1646794523
 transform 1 0 1460 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_2
-timestamp 1644111581
+timestamp 1646794523
 transform 1 0 2932 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_3
-timestamp 1644111581
+timestamp 1646794523
 transform 1 0 4404 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_4
-timestamp 1644111581
+timestamp 1646794523
 transform 1 0 5876 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_5
-timestamp 1644111581
+timestamp 1646794523
 transform 1 0 7348 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_6
-timestamp 1644111581
+timestamp 1646794523
 transform 1 0 8820 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_7
-timestamp 1644111581
+timestamp 1646794523
 transform 1 0 10292 0 1 12
 box -38 -48 1510 592
 << labels >>
