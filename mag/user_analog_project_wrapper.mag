@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1646600577
+timestamp 1646785389
 << metal1 >>
 rect 7241 643202 7251 643298
 rect 7469 643202 7479 643298
@@ -1517,34 +1517,34 @@ rect -100 704000 584100 704100
 rect -100 0 0 704000
 rect 584000 0 584100 704000
 rect -100 -100 584100 0
-use proj_sstl_test  proj_sstl_test_0
-timestamp 1646594466
-transform 1 0 15929 0 1 645492
-box -424 16 33306 40167
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1644111581
-transform 1 0 54234 0 1 642706
-box -38 -48 130 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1644111581
-transform 1 0 7038 0 1 642706
-box -38 -48 130 592
-use cfg_shift_register  cfg_shift_register_3
+use cfg_shift_register  cfg_shift_register_0
 timestamp 1646187848
-transform 1 0 7142 0 1 642694
-box -72 -183 11802 839
-use cfg_shift_register  cfg_shift_register_2
-timestamp 1646187848
-transform 1 0 18918 0 1 642694
+transform 1 0 42470 0 1 642694
 box -72 -183 11802 839
 use cfg_shift_register  cfg_shift_register_1
 timestamp 1646187848
 transform 1 0 30694 0 1 642694
 box -72 -183 11802 839
-use cfg_shift_register  cfg_shift_register_0
+use cfg_shift_register  cfg_shift_register_2
 timestamp 1646187848
-transform 1 0 42470 0 1 642694
+transform 1 0 18918 0 1 642694
 box -72 -183 11802 839
+use cfg_shift_register  cfg_shift_register_3
+timestamp 1646187848
+transform 1 0 7142 0 1 642694
+box -72 -183 11802 839
+use sky130_fd_sc_hd__tapvpwrvgnd_1#0  sky130_fd_sc_hd__tapvpwrvgnd_1_1 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1644111581
+transform 1 0 7038 0 1 642706
+box -38 -48 130 592
+use sky130_fd_sc_hd__tapvpwrvgnd_1#0  sky130_fd_sc_hd__tapvpwrvgnd_1_0
+timestamp 1644111581
+transform 1 0 54234 0 1 642706
+box -38 -48 130 592
+use proj_sstl_test  proj_sstl_test_0
+timestamp 1646785351
+transform 1 0 15929 0 1 645492
+box -424 16 33306 40167
 << labels >>
 flabel metal3 s 583520 269230 584800 269342 0 FreeSans 1120 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
