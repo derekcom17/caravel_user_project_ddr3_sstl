@@ -44,7 +44,7 @@ In the diagram above, rx_DQ is the data input, and tx_DQ, n_tx_DQ are the data o
 `tx/rx_pu/pd_cal` signals control the calibration FETs within the legs.
 
 As can be seen in the diagram, there are 3 alternate data inputs. This allows external signals to be substituted for the input signal.
-In this design, `data_0` is tied to VDD, `data_2` is tied to VSS (ground) and `data_3` is connected to `la_data_out[0]`.
+In this design, `data_0` is tied to VDD, `data_2` is tied to VSS (ground) and `data_3` is connected to `la_data_in[0]`.
 The ability to set the signal output to a static high or low voltage will be helpful when manually performing the calibration procedure in the lab.
 
 ## Pinout

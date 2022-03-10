@@ -116,7 +116,7 @@ A1 [d_d_in] [a_din] dac_1v5
 
 * signal in
 vsig io_analog[10] 0 0 PULSE 0 1.5 1n 10p 10p 5n 10n 0
-vsigalt la_data_out[0] 0 0
+vsigalt la_data_in[0] 0 0
 
 * Connect VDD and VSS
 vvddio  io_clamp_high[2] VDD 0
