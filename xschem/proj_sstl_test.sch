@@ -113,7 +113,7 @@ value="** Local library links to pdk
 spice_ignore=false}
 C {devices/lab_wire.sym} 1180 -300 3 0 {name=l1 sig_type=std_logic lab=d_out}
 C {sky130/sky130_fd_pr/res_generic_m1.sym} 820 -330 3 0 {name=R1
-W=6.525
-L=0.535
+W=0.535
+L=6.525
 model=res_generic_m1
 mult=1}

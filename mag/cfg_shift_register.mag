@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1646794523
+timestamp 1646875120
 << nwell >>
 rect -50 518 118 839
 rect 5819 594 6350 646
@@ -291,35 +291,35 @@ rect 8772 -36 8812 96
 rect 10244 -36 10284 96
 rect 11716 -36 11756 96
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1646794523
+timestamp 1646787781
 transform 1 0 -12 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_1
-timestamp 1646794523
+timestamp 1646787781
 transform 1 0 1460 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_2
-timestamp 1646794523
+timestamp 1646787781
 transform 1 0 2932 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_3
-timestamp 1646794523
+timestamp 1646787781
 transform 1 0 4404 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_4
-timestamp 1646794523
+timestamp 1646787781
 transform 1 0 5876 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_5
-timestamp 1646794523
+timestamp 1646787781
 transform 1 0 7348 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_6
-timestamp 1646794523
+timestamp 1646787781
 transform 1 0 8820 0 1 12
 box -38 -48 1510 592
 use sky130_fd_sc_hd__dfxtp_1  sky130_fd_sc_hd__dfxtp_1_7
-timestamp 1646794523
+timestamp 1646787781
 transform 1 0 10292 0 1 12
 box -38 -48 1510 592
 << labels >>

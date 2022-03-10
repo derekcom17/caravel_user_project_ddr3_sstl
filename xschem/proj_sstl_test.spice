@@ -1,5 +1,5 @@
  ** Local library links to pdk
-.include /home/derekhm/cad/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /home/derekhm/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 **.subckt proj_sstl_test rx_DQ rx_pu_cal[3],rx_pu_cal[2],rx_pu_cal[1],rx_pu_cal[0]
 *+ rx_pd_cal[3],rx_pd_cal[2],rx_pd_cal[1],rx_pd_cal[0]
@@ -26,33 +26,34 @@ X1 rx_DQ rx_leg_ctrl[6] rx_leg_ctrl[5] rx_leg_ctrl[4] rx_leg_ctrl[3] rx_leg_ctrl
 + rx_leg_ctrl[0] rx_leg_ctrl[6] rx_leg_ctrl[5] rx_leg_ctrl[4] rx_leg_ctrl[3] rx_leg_ctrl[2] rx_leg_ctrl[1]
 + rx_leg_ctrl[0] rx_pd_cal[3] rx_pd_cal[2] rx_pd_cal[1] rx_pd_cal[0] rx_pu_cal[3] rx_pu_cal[2] rx_pu_cal[1]
 + rx_pu_cal[0] IOVDD GND SSTL
-X2 tx_DQ net4[6] net4[5] net4[4] net4[3] net4[2] net4[1] net4[0] net5[6] net5[5] net5[4] net5[3]
-+ net5[2] net5[1] net5[0] tx_pd_cal[3] tx_pd_cal[2] tx_pd_cal[1] tx_pd_cal[0] tx_pu_cal[3] tx_pu_cal[2]
-+ tx_pu_cal[1] tx_pu_cal[0] IOVDD GND SSTL
-X3 n_tx_DQ net5[6] net5[5] net5[4] net5[3] net5[2] net5[1] net5[0] net4[6] net4[5] net4[4] net4[3]
+X2 tx_DQ net3[6] net3[5] net3[4] net3[3] net3[2] net3[1] net3[0] net4[6] net4[5] net4[4] net4[3]
 + net4[2] net4[1] net4[0] tx_pd_cal[3] tx_pd_cal[2] tx_pd_cal[1] tx_pd_cal[0] tx_pu_cal[3] tx_pu_cal[2]
 + tx_pu_cal[1] tx_pu_cal[0] IOVDD GND SSTL
-x1 rx_DQ GND GND VDD VDD net1 sky130_fd_sc_hd__clkbuf_2
+X3 n_tx_DQ net4[6] net4[5] net4[4] net4[3] net4[2] net4[1] net4[0] net3[6] net3[5] net3[4] net3[3]
++ net3[2] net3[1] net3[0] tx_pd_cal[3] tx_pd_cal[2] tx_pd_cal[1] tx_pd_cal[0] tx_pu_cal[3] tx_pu_cal[2]
++ tx_pu_cal[1] tx_pu_cal[0] IOVDD GND SSTL
+x1 net6 GND GND VDD VDD net1 sky130_fd_sc_hd__clkbuf_2
 x2 net1 GND GND VDD VDD net2 sky130_fd_sc_hd__clkbuf_2
-x3 data_0 net2 data_2 data_3 d_sel_0 d_sel_1 GND GND VDD VDD net3 sky130_fd_sc_hd__mux4_1
-x4 net3 GND GND VDD VDD net6 sky130_fd_sc_hd__clkinv_2
-xn_and[6] net3 tx_leg_ctrl[6] GND GND VDD VDD net4[6] sky130_fd_sc_hd__and2_1
-xn_and[5] net3 tx_leg_ctrl[5] GND GND VDD VDD net4[5] sky130_fd_sc_hd__and2_1
-xn_and[4] net3 tx_leg_ctrl[4] GND GND VDD VDD net4[4] sky130_fd_sc_hd__and2_1
-xn_and[3] net3 tx_leg_ctrl[3] GND GND VDD VDD net4[3] sky130_fd_sc_hd__and2_1
-xn_and[2] net3 tx_leg_ctrl[2] GND GND VDD VDD net4[2] sky130_fd_sc_hd__and2_1
-xn_and[1] net3 tx_leg_ctrl[1] GND GND VDD VDD net4[1] sky130_fd_sc_hd__and2_1
-xn_and[0] net3 tx_leg_ctrl[0] GND GND VDD VDD net4[0] sky130_fd_sc_hd__and2_1
-xand[6] net6 tx_leg_ctrl[6] GND GND VDD VDD net5[6] sky130_fd_sc_hd__and2_1
-xand[5] net6 tx_leg_ctrl[5] GND GND VDD VDD net5[5] sky130_fd_sc_hd__and2_1
-xand[4] net6 tx_leg_ctrl[4] GND GND VDD VDD net5[4] sky130_fd_sc_hd__and2_1
-xand[3] net6 tx_leg_ctrl[3] GND GND VDD VDD net5[3] sky130_fd_sc_hd__and2_1
-xand[2] net6 tx_leg_ctrl[2] GND GND VDD VDD net5[2] sky130_fd_sc_hd__and2_1
-xand[1] net6 tx_leg_ctrl[1] GND GND VDD VDD net5[1] sky130_fd_sc_hd__and2_1
-xand[0] net6 tx_leg_ctrl[0] GND GND VDD VDD net5[0] sky130_fd_sc_hd__and2_1
+x3 data_0 net2 data_2 data_3 d_sel_0 d_sel_1 GND GND VDD VDD d_out sky130_fd_sc_hd__mux4_1
+x4 d_out GND GND VDD VDD net5 sky130_fd_sc_hd__clkinv_2
+xn_and[6] d_out tx_leg_ctrl[6] GND GND VDD VDD net3[6] sky130_fd_sc_hd__and2_1
+xn_and[5] d_out tx_leg_ctrl[5] GND GND VDD VDD net3[5] sky130_fd_sc_hd__and2_1
+xn_and[4] d_out tx_leg_ctrl[4] GND GND VDD VDD net3[4] sky130_fd_sc_hd__and2_1
+xn_and[3] d_out tx_leg_ctrl[3] GND GND VDD VDD net3[3] sky130_fd_sc_hd__and2_1
+xn_and[2] d_out tx_leg_ctrl[2] GND GND VDD VDD net3[2] sky130_fd_sc_hd__and2_1
+xn_and[1] d_out tx_leg_ctrl[1] GND GND VDD VDD net3[1] sky130_fd_sc_hd__and2_1
+xn_and[0] d_out tx_leg_ctrl[0] GND GND VDD VDD net3[0] sky130_fd_sc_hd__and2_1
+xand[6] net5 tx_leg_ctrl[6] GND GND VDD VDD net4[6] sky130_fd_sc_hd__and2_1
+xand[5] net5 tx_leg_ctrl[5] GND GND VDD VDD net4[5] sky130_fd_sc_hd__and2_1
+xand[4] net5 tx_leg_ctrl[4] GND GND VDD VDD net4[4] sky130_fd_sc_hd__and2_1
+xand[3] net5 tx_leg_ctrl[3] GND GND VDD VDD net4[3] sky130_fd_sc_hd__and2_1
+xand[2] net5 tx_leg_ctrl[2] GND GND VDD VDD net4[2] sky130_fd_sc_hd__and2_1
+xand[1] net5 tx_leg_ctrl[1] GND GND VDD VDD net4[1] sky130_fd_sc_hd__and2_1
+xand[0] net5 tx_leg_ctrl[0] GND GND VDD VDD net4[0] sky130_fd_sc_hd__and2_1
+R1 net6 rx_DQ sky130_fd_pr__res_generic_m1 W=0.535 L=6.525 m=1
 **.ends
 
-* expanding   symbol:  /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sym # of pins=5
+* expanding   symbol:  xschem/SSTL/SSTL.sym # of pins=5
 * sym_path: /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sym
 * sch_path: /home/derekhm/proj/caravan-project/xschem/SSTL/SSTL.sch
 .subckt SSTL  DQ  pd_ctrl[6] pd_ctrl[5] pd_ctrl[4] pd_ctrl[3] pd_ctrl[2] pd_ctrl[1] pd_ctrl[0]

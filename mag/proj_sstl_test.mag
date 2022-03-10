@@ -1,12 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1646793240
-<< checkpaint >>
-rect 9518 27436 37238 39404
-rect -3914 8052 37238 27436
-rect -3914 7508 16814 8052
-rect -3914 -3916 12950 7508
+timestamp 1646875120
 << locali >>
 rect 22027 32313 23103 32425
 rect 22027 29049 23103 29161
@@ -1829,18 +1824,18 @@ rect 23503 9913 23930 9914
 rect 28789 4311 33084 11984
 rect 8796 16 33084 4311
 use SSTL  SSTL_0 ~/proj/caravan-project/mag/./SSTL
-timestamp 1646792692
+timestamp 1646875043
 transform 1 0 2350 0 -1 4308
 box -2332 -19196 6668 4292
 use SSTL  SSTL_1
-timestamp 1646792692
+timestamp 1646875043
 transform -1 0 20118 0 -1 16276
 box -2332 -19196 6668 4292
 use SSTL  SSTL_2
-timestamp 1646792692
+timestamp 1646875043
 transform 1 0 26638 0 -1 16276
 box -2332 -19196 6668 4292
-use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_0 
 timestamp 1646787781
 transform -1 0 23608 0 1 12576
 box -38 -48 498 592
@@ -1896,7 +1891,7 @@ use sky130_fd_sc_hd__and2_1  sky130_fd_sc_hd__and2_1_13
 timestamp 1646787781
 transform -1 0 23608 0 1 32160
 box -38 -48 498 592
-use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_0 
 timestamp 1646787781
 transform 1 0 9716 0 1 11488
 box -38 -48 406 592
@@ -1904,15 +1899,15 @@ use sky130_fd_sc_hd__clkbuf_2  sky130_fd_sc_hd__clkbuf_2_1
 timestamp 1646787781
 transform 1 0 10084 0 1 11488
 box -38 -48 406 592
-use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__clkinv_2  sky130_fd_sc_hd__clkinv_2_0 
 timestamp 1646787781
 transform 1 0 12384 0 1 11488
 box -38 -48 406 592
-use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__mux4_1  sky130_fd_sc_hd__mux4_1_0 
 timestamp 1646787781
 transform 1 0 10452 0 1 11488
 box -38 -48 1970 592
-use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 
 timestamp 1646787781
 transform 1 0 12752 0 1 11488
 box -38 -48 130 592
