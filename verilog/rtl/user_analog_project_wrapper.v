@@ -26,6 +26,7 @@
  *-------------------------------------------------------------
  */
 
+
 module user_analog_project_wrapper (
 `ifdef USE_POWER_PINS
     inout vdda1,	// User area 1 3.3V supply
@@ -123,60 +124,27 @@ module user_analog_project_wrapper (
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
-user_analog_proj_example mprj (
-    `ifdef USE_POWER_PINS
-        .vdda1(vdda1),  // User area 1 3.3V power
-        .vdda2(vdda2),  // User area 2 3.3V power
-        .vssa1(vssa1),  // User area 1 analog ground
-        .vssa2(vssa2),  // User area 2 analog ground
-        .vccd1(vccd1),  // User area 1 1.8V power
-        .vccd2(vccd2),  // User area 2 1.8V power
-        .vssd1(vssd1),  // User area 1 digital ground
-        .vssd2(vssd2),  // User area 2 digital ground
-    `endif
+reg [0:31] sreg_q;
+cfg_shift_regster cfg_shift_regster_0(.clk(gpio_analog[8]), .din(gpio_analog[7]), .q(sreg_q));
 
-    .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
+// sstl_analog_project mprj (
+//     // IO power
+//     .vddio(io_analog[5]),
+//     .vssio(io_analog[6]),
+//     // Digital power
+//     .vdddig(io_analog[4]),
+//     .vssdig(io_analog[3]),
+//     // Analog signals in/out
+//     .rx_DQ(io_analog[10]),
+//     .tx_DQ(io_analog[8]),
+//     .n_tx_DQ(io_analog[9]),
+//     // Configuraiton
+//     .clk(gpio_analog[8]),
+//     .din(io_analog[7]),
+//     // Alternate data in from Logic Analyzer signals
+//     .alt_data_in(la_data_in[0])
+// );
 
-    // MGMT SoC Wishbone Slave
-
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
-
-    // Logic Analyzer
-
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
-
-    // IO Pads
-    .io_in (io_in),
-    .io_in_3v3 (io_in_3v3),
-    .io_out(io_out),
-    .io_oeb(io_oeb),
-
-    // GPIO-analog
-    .gpio_analog(gpio_analog),
-    .gpio_noesd(gpio_noesd),
-
-    // Dedicated analog
-    .io_analog(io_analog),
-    .io_clamp_high(io_clamp_high),
-    .io_clamp_low(io_clamp_low),
-
-    // Clock
-    .user_clock2(user_clock2),
-
-    // IRQ
-    .irq(user_irq)
-);
-
-endmodule	// user_analog_project_wrapper
+endmodule // user_analog_project_wrapper
 
 `default_nettype wire
