@@ -65,8 +65,8 @@ N 40 -40 240 -40 { lab=#net5}
 N 120 -80 140 -80 { lab=#net5}
 N 220 -80 240 -80 { lab=#net5}
 N 120 -520 200 -520 { lab=clken_0}
-N -260 -480 0 -480 { lab=cfg_in[0]}
-N -180 -520 -0 -520 { lab=cfg_in[1]}
+N -260 -390 0 -390 { lab=cfg_in[0]}
+N -180 -430 0 -430 { lab=cfg_in[1]}
 N -20 -600 0 -600 { lab=cfg_in[0]}
 N -20 -600 -20 -480 { lab=cfg_in[0]}
 N -40 -640 -0 -640 { lab=cfg_in[1]}
@@ -102,17 +102,13 @@ N -40 -720 -0 -720 { lab=cfg_in[1]}
 N -60 -800 -60 -680 { lab=cfg_in[2]}
 N -60 -800 -0 -800 { lab=cfg_in[2]}
 N -20 -840 -20 -760 { lab=cfg_in[0]}
-N -20 -840 0 -840 { lab=cfg_in[0]}
 N -40 -880 -40 -720 { lab=cfg_in[1]}
-N -40 -880 -0 -880 { lab=cfg_in[1]}
 N -60 -920 -60 -800 { lab=cfg_in[2]}
 N -60 -920 0 -920 { lab=cfg_in[2]}
 N -60 -960 -60 -920 { lab=cfg_in[2]}
 N -60 -960 0 -960 { lab=cfg_in[2]}
 N -40 -1000 -40 -880 { lab=cfg_in[1]}
-N -40 -1000 0 -1000 { lab=cfg_in[1]}
 N -20 -1040 -20 -840 { lab=cfg_in[0]}
-N -20 -1040 0 -1040 { lab=cfg_in[0]}
 N -40 -1160 -40 -1000 { lab=cfg_in[1]}
 N -40 -1160 0 -1160 { lab=cfg_in[1]}
 N -20 -1120 -20 -1040 { lab=cfg_in[0]}
@@ -122,15 +118,8 @@ N -60 -1080 0 -1080 { lab=cfg_in[2]}
 N -20 -1280 -20 -1120 { lab=cfg_in[0]}
 N -20 -1280 -0 -1280 { lab=cfg_in[0]}
 N -40 -1200 -40 -1160 { lab=cfg_in[1]}
-N -40 -1200 0 -1200 { lab=cfg_in[1]}
 N -60 -1240 -60 -1080 { lab=cfg_in[2]}
-N -60 -1240 -0 -1240 { lab=cfg_in[2]}
-N -20 -1320 -20 -1280 { lab=cfg_in[0]}
-N -20 -1320 0 -1320 { lab=cfg_in[0]}
-N -40 -1360 -40 -1200 { lab=cfg_in[1]}
-N -40 -1360 0 -1360 { lab=cfg_in[1]}
 N -60 -1400 -60 -1240 { lab=cfg_in[2]}
-N -60 -1400 0 -1400 { lab=cfg_in[2]}
 N 120 -760 620 -760 { lab=clken_2}
 N 120 -880 840 -880 { lab=clken_3}
 N 660 -760 660 -520 { lab=clk_2}
@@ -164,10 +153,10 @@ N 880 -1460 880 -1420 { lab=clk_sel}
 N 660 -1460 660 -1420 { lab=clk_sel}
 N 440 -1460 440 -1420 { lab=clk_sel}
 N 240 -1460 240 -1420 { lab=clk_sel}
-N -260 -520 -180 -520 { lab=cfg_in[1]}
-N -260 -560 -60 -560 { lab=cfg_in[2]}
-N -270 -580 -270 -490 { lab=cfg_in[2:0]}
-N -60 -560 -0 -560 { lab=cfg_in[2]}
+N -260 -430 -180 -430 { lab=cfg_in[1]}
+N -260 -470 -60 -470 { lab=cfg_in[2]}
+N -270 -490 -270 -400 { lab=cfg_in[2:0]}
+N -60 -470 0 -470 { lab=cfg_in[2]}
 N 240 -1460 1780 -1460 { lab=clk_sel}
 N 40 -80 240 -80 { lab=#net5}
 N 2200 -1500 2400 -1500 { lab=clk_out}
@@ -325,6 +314,28 @@ N 2980 -1080 2980 -1040 { lab=lfsr_28}
 N 2980 -1040 3180 -1040 { lab=lfsr_28}
 N 1860 -1460 1900 -1460 { lab=#net47}
 N 1980 -1460 2200 -1460 { lab=clk_out}
+N -60 -560 -60 -470 { lab=cfg_in[2]}
+N -60 -560 0 -560 { lab=cfg_in[2]}
+N -40 -520 -40 -430 { lab=cfg_in[1]}
+N -20 -480 -20 -390 { lab=cfg_in[0]}
+N -20 -520 -0 -520 { lab=cfg_in[0]}
+N -40 -490 -10 -490 { lab=cfg_in[1]}
+N -10 -490 -10 -480 { lab=cfg_in[1]}
+N -10 -480 0 -480 { lab=cfg_in[1]}
+N -20 -880 0 -880 { lab=cfg_in[0]}
+N 0 -850 0 -840 { lab=cfg_in[1]}
+N -40 -850 0 -850 { lab=cfg_in[1]}
+N -20 -1000 0 -1000 { lab=cfg_in[0]}
+N -0 -1040 0 -1030 { lab=cfg_in[1]}
+N -40 -1030 0 -1030 { lab=cfg_in[1]}
+N -40 -1240 -0 -1240 { lab=cfg_in[1]}
+N -0 -1210 -0 -1200 { lab=cfg_in[2]}
+N -60 -1210 -0 -1210 { lab=cfg_in[2]}
+N -20 -1400 0 -1400 { lab=cfg_in[0]}
+N -40 -1320 -0 -1320 { lab=cfg_in[1]}
+N -20 -1400 -20 -1280 { lab=cfg_in[0]}
+N -40 -1320 -40 -1200 { lab=cfg_in[1]}
+N -60 -1360 0 -1360 { lab=cfg_in[2]}
 C {sky130/sky130_stdcells/dfxbp_1.sym} 330 -290 0 0 {name=x8 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130/sky130_stdcells/clkbuf_1.sym} 840 -140 0 1 {name=x16 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/code_shown.sym} 995 -115 0 0 {name=MODELS
@@ -350,9 +361,9 @@ C {sky130/sky130_stdcells/clkbuf_1.sym} 500 -140 0 1 {name=x2 VGND=GND VNB=GND V
 C {devices/lab_wire.sym} 240 -410 0 0 {name=l1 sig_type=std_logic lab=clk_0}
 C {sky130/sky130_stdcells/clkinv_1.sym} 580 -80 0 0 {name=x3 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130/sky130_stdcells/clkinv_1.sym} 480 -80 0 0 {name=x4 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {devices/bus_connect.sym} -270 -490 1 0 {name=l2 lab=cfg_in[0]}
-C {devices/bus_connect.sym} -270 -530 1 0 {name=l3 lab=cfg_in[1]}
-C {devices/bus_connect.sym} -270 -570 1 0 {name=l4 lab=cfg_in[2]}
+C {devices/bus_connect.sym} -270 -400 1 0 {name=l2 lab=cfg_in[0]}
+C {devices/bus_connect.sym} -270 -440 1 0 {name=l3 lab=cfg_in[1]}
+C {devices/bus_connect.sym} -270 -480 1 0 {name=l4 lab=cfg_in[2]}
 C {devices/lab_wire.sym} 440 -410 0 0 {name=l5 sig_type=std_logic lab=clk_1}
 C {devices/lab_wire.sym} 660 -410 0 0 {name=l6 sig_type=std_logic lab=clk_2}
 C {devices/lab_wire.sym} 880 -410 0 0 {name=l7 sig_type=std_logic lab=clk_3}
@@ -397,7 +408,7 @@ C {sky130/sky130_stdcells/einvn_1.sym} 1100 -1040 1 1 {name=x37 VGND=GND VNB=GND
 C {sky130/sky130_stdcells/einvn_1.sym} 1320 -1160 1 1 {name=x38 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130/sky130_stdcells/einvn_1.sym} 1540 -1280 1 1 {name=x39 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130/sky130_stdcells/einvn_1.sym} 1760 -1400 1 1 {name=x40 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {devices/ipin.sym} -270 -580 0 0 {name=p1 lab=cfg_in[2:0]}
+C {devices/ipin.sym} -270 -490 0 0 {name=p1 lab=cfg_in[2:0]}
 C {sky130/sky130_stdcells/clkinv_1.sym} 1820 -1460 0 0 {name=x41 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 1730 -1460 0 0 {name=l20 sig_type=std_logic lab=clk_sel}
 C {devices/lab_wire.sym} 2150 -1460 0 0 {name=l21 sig_type=std_logic lab=clk_out}
