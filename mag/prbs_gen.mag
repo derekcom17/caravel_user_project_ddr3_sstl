@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1647065735
+timestamp 1647071613
 << checkpaint >>
 rect 8957 8368 18461 8912
 rect 1413 6736 18461 8368
@@ -2266,10 +2266,6 @@ use sky130_fd_sc_hd__fill_8  sky130_fd_sc_hd__fill_8_20
 timestamp 1646787781
 transform 1 0 4739 0 1 1124
 box -38 -48 774 592
-use sky130_fd_sc_hd__fill_8  sky130_fd_sc_hd__fill_8_21
-timestamp 1646787781
-transform 1 0 5475 0 1 1124
-box -38 -48 774 592
 use sky130_fd_sc_hd__fill_8  sky130_fd_sc_hd__fill_8_22
 timestamp 1646787781
 transform 1 0 6487 0 1 1124
@@ -2319,15 +2315,15 @@ timestamp 1646787781
 transform 1 0 14859 0 1 1124
 box -38 -48 406 592
 use sky130_fd_sc_hd__nand3b_1  sky130_fd_sc_hd__nand3b_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1647065735
+timestamp 1647071613
 transform 1 0 7683 0 1 1124
 box -38 -48 590 592
 use sky130_fd_sc_hd__nand3b_1  sky130_fd_sc_hd__nand3b_1_1
-timestamp 1647065735
+timestamp 1647071613
 transform 1 0 11179 0 1 1124
 box -38 -48 590 592
 use sky130_fd_sc_hd__nand3b_1  sky130_fd_sc_hd__nand3b_1_2
-timestamp 1647065735
+timestamp 1647071613
 transform 1 0 12927 0 1 1124
 box -38 -48 590 592
 use sky130_fd_sc_hd__or3_1  sky130_fd_sc_hd__or3_1_0 ~/proj/caravan-project/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag
