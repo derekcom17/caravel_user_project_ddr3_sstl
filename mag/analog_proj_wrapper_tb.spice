@@ -9,8 +9,8 @@ Xdut gpio_analog[0] gpio_analog[10] gpio_analog[11]
 + gpio_noesd[11] gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15] gpio_noesd[16]
 + gpio_noesd[17] gpio_noesd[1] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4] gpio_noesd[5]
 + gpio_noesd[6] gpio_noesd[7] gpio_noesd[8] gpio_noesd[9] io_analog[0] io_analog[10]
-+ io_analog[1] io_analog[2] io_analog[7] io_analog[8] io_analog[9] io_clamp_high[0]
-+ io_clamp_high[2] io_clamp_low[2] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
++ io_analog[1] io_analog[2] io_analog[3] io_analog[4] io_analog[5] io_analog[6] io_analog[7] io_analog[8] io_analog[9] io_clamp_high[0] io_clamp_high[1]
++ io_clamp_high[2] io_clamp_low[0] io_clamp_low[1] io_clamp_low[2] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21]
 + io_in[22] io_in[23] io_in[24] io_in[25] io_in[26] io_in[2] io_in[3] io_in[4] io_in[5]
 + io_in[6] io_in[7] io_in[8] io_in[9] io_in_3v3[0] io_in_3v3[10] io_in_3v3[11] io_in_3v3[12]
@@ -113,10 +113,15 @@ vclk gpio_analog[8] a_clk 0
 vdin gpio_analog[7] a_din 0
 A2 [d_clk]  [a_clk] dac_1v5
 A1 [d_d_in] [a_din] dac_1v5
+* config PRBS speed
+vprbs_cfg2 gpio_analog[11]  0  0
+vprbs_cfg1 gpio_analog[10]  0  0
+vprbs_cfg0 gpio_analog[9]   0  0
 
 * signal in
 vsig io_analog[10] 0 0 PULSE 0 1.5 1n 10p 10p 5n 10n 0
 vsigalt la_data_in[0] 0 0
+vprbsrst gpio_analog[12] 0 0 PWL 0 0 19.990ns 0 20ns 1.5
 
 * Connect VDD and VSS
 vvddio  io_clamp_high[2] VDD 0
@@ -142,16 +147,18 @@ a_source [d_clk d_d_in] d_source1
 
 
 .control
-set num_threads=12
 save all
 set temp=27
+set num_threads=6
 
 * RUN SIMULATION
-tran 10p 200n
+*tran 5p 5n
+tran 5p 150n
 
 * OUTPUT
 set hcopydevtype = svg
-hardcopy ./sig_in_sig_out.svg "io_analog[10]"-2 "io_analog[9]" "io_analog[8]" title 'Signal input and output'
+hardcopy ./prbs.svg "xdut.prbs_gen_0/dout" "gpio_analog[12]" "xdut.xprbs_gen_0.sky130_fd_sc_hd__clkinv_4_0/y"+2 "xdut.xprbs_gen_0.sky130_fd_sc_hd__einvn_4_0/a"+4 title "PRBS Gen Signals"
+hardcopy ./sig_in_sig_out.svg "io_analog[10]"-2 "io_analog[9]" "io_analog[8]" "xdut.prbs_gen_0/dout"+2 title 'Signal input and output'
 hardcopy ./reg_write.svg a_clk-2 a_din title 'Register write'
 
 .endc

@@ -1,7 +1,7 @@
 v {xschem version=3.0.0 file_version=1.2 }
 G {}
 K {type=subcircuit
-format="@name @@cfg_in[2:0] @@dout @VDD @GND @symname"
+format="@name @@cfg_in[2:0] @@n_rst @@dout @VDD @GND @symname"
 template="name=X1 VDD=VDD GND=GND"
 extra="VDD GND"}
 V {}
@@ -9,13 +9,17 @@ S {}
 E {}
 L 4 560 -160 600 -160 {}
 L 4 60 -160 100 -160 {}
+L 4 60 -110 100 -110 {}
 B 5 57.5 -162.5 62.5 -157.5 {name=cfg_in[2:0]
 dir=in}
 B 5 597.5 -162.5 602.5 -157.5 {name=dout
 dir=out}
+B 5 57.5 -112.5 62.5 -107.5 {name=n_rst
+dir=in}
 P 4 5 100 -200 560 -200 560 -80 100 -80 100 -200 {}
 T {PRBS Sequence 
 Generator} 205 -180 0 0 0.7 0.7 {}
 T {@name} 290 -220 0 0 0.3 0.3 {}
 T {cfg_in[2:0]} 100 -170 0 0 0.3 0.3 {}
 T {dout} 510 -170 0 0 0.3 0.3 {}
+T {n_rst} 100 -120 0 0 0.3 0.3 {}

@@ -30,11 +30,11 @@
 56n     1s 1s
 58n     0s 0s
 60n     1s 0s
-62n      0s 0s
-64n      1s 0s
+62n      0s 1s
+64n      1s 1s
 
-66n      0s 1s  
-68n      1s 1s
+66n      0s 0s  
+68n      1s 0s
 70n     0s 0s
 72n     1s 0s
 74n     0s 1s

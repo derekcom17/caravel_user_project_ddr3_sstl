@@ -336,6 +336,8 @@ N -40 -1320 -0 -1320 { lab=cfg_in[1]}
 N -20 -1400 -20 -1280 { lab=cfg_in[0]}
 N -40 -1320 -40 -1200 { lab=cfg_in[1]}
 N -60 -1360 0 -1360 { lab=cfg_in[2]}
+N 2050 -1420 2200 -1420 { lab=n_rst}
+N 2050 -1600 2050 -1420 { lab=n_rst}
 C {sky130/sky130_stdcells/dfxbp_1.sym} 330 -290 0 0 {name=x8 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130/sky130_stdcells/clkbuf_1.sym} 840 -140 0 1 {name=x16 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/code_shown.sym} 995 -115 0 0 {name=MODELS
@@ -414,7 +416,7 @@ C {devices/lab_wire.sym} 1730 -1460 0 0 {name=l20 sig_type=std_logic lab=clk_sel
 C {devices/lab_wire.sym} 2150 -1460 0 0 {name=l21 sig_type=std_logic lab=clk_out}
 C {sky130/sky130_stdcells/clkinv_1.sym} 380 -80 0 0 {name=x42 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130/sky130_stdcells/clkinv_1.sym} 280 -80 0 0 {name=x43 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {/home/derekhm/cad/share/pdk/sky130A/libs.tech/xschem/sky130_stdcells/dfxtp_1.sym} 2290 -1450 0 0 {name=xsr_0 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {/home/derekhm/cad/share/pdk/sky130A/libs.tech/xschem/sky130_stdcells/dfstp_1.sym} 2290 -1440 0 0 {name=xsr_0 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130/sky130_stdcells/xor3_1.sym} 2320 -1580 2 0 {name=x44 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/opin.sym} 2180 -1600 0 0 {name=p2 lab=dout
 }
@@ -452,3 +454,4 @@ C {devices/lab_wire.sym} 2380 -1440 2 0 {name=l22 sig_type=std_logic lab=lfsr_0}
 C {devices/lab_wire.sym} 2980 -1040 2 0 {name=l23 sig_type=std_logic lab=lfsr_28}
 C {devices/lab_wire.sym} 3580 -1080 2 0 {name=l24 sig_type=std_logic lab=lfsr_31}
 C {sky130/sky130_stdcells/clkinv_4.sym} 1940 -1460 0 0 {name=x46 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/ipin.sym} 2050 -1600 0 0 {name=p3 lab=n_rst}
