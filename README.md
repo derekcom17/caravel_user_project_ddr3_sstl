@@ -44,8 +44,9 @@ In the diagram above, rx_DQ is the data input, and tx_DQ, n_tx_DQ are the data o
 `tx/rx_pu/pd_cal` signals control the calibration FETs within the legs.
 
 As can be seen in the diagram, there are 3 alternate data inputs. This allows external signals to be substituted for the input signal.
-In this design, `data_0` is tied to VDD, `data_2` is tied to VSS (ground) and `data_3` is connected to `la_data_in[0]`.
-The ability to set the signal output to a static high or low voltage will be helpful when manually performing the calibration procedure in the lab.
+In this design, `data_0` is tied to VDD, `data_2` is tied to a PRBS-31 sequence generator, and `data_3` is connected to `la_data_in[0]`.
+
+The PRBS-31 sequence generator is clocked by a ring-oscilator with a configurable clock divider. There are 8 clock speeds controlled by 3 control bits. Binary 0 is the fastest clock and binary 7 is the slowest. There is also an active low reset signal to reset the PRBS lfsr state to "1".
 
 ## Pinout
 
@@ -60,6 +61,10 @@ The ability to set the signal output to a static high or low voltage will be hel
 | IO[17]            | io_analog[3]           | Digital VSS (gnd) |
 | IO[25]            | gpio_analog[7]         | configuration data in |
 | IO[26]            | gpio_analog[8]         | configuration clock in |
+| IO[27]            | gpio_analog[9]         | PRBS clock config bit 0 |
+| IO[28]            | gpio_analog[10]        | PRBS clock config bit 1 |
+| IO[29]            | gpio_analog[11]        | PRBS clock config bit 2 |
+| IO[30]            | gpio_analog[12]        | PRBS state active low reset |
 
 
 ## Chip Configuration Interface
