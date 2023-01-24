@@ -9,6 +9,8 @@ The SSTL circuit is designed to meet the DDR3 specifications.
 
 The design details and simulation flow used to develop the SSTL circuit can be found here: ([BSG DDR3 IO Project](https://github.com/bespoke-silicon-group/bsg_ddr3_io))
 
+Additional details in the high level [SSTL design document](https://docs.google.com/document/d/1wNUKeTsitHc6M3Hf8fiF9PxTNUS0z07V-TF2fHk_Cl0/).
+
 ## SSTL Function
 The SSTL is a necessary part of a DDR3 memory controller. It is the driver circuit for the data lines, and also serves as the termination when the controller is receiving data.
 Ideally, this cell would go under the IO pads for the data (DQ) pins for the memory interface.
